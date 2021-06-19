@@ -1,0 +1,241 @@
+$base-color: #007bff;
+$green-color: #008000;
+$red-color: #FF0000;
+$secondary-color: #3e94ab;
+$gray-color: #6c757d;
+$orange-color :#FFA500;
+$light-orange-color : #ffa86b;
+$deep-pink-color : #FF6347;
+
+.position-absolute{
+    position: absolute;
+}   
+.position-relative{
+    position: relative;
+}    
+.position-fixed{
+    position: fixed;
+}   
+.z-index-999{
+    z-index: 999;
+}
+.width-full{
+    width: 100%;
+}
+.height-full{
+    height: 100vh;
+}
+.overflow-none{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.word-wrap-break{
+    word-wrap: break-word; 
+}
+.text-align-justify{
+    text-align: justify;
+}
+.text-align-center{
+    text-align: center;
+}
+.text-align-left{
+    text-align: left;
+}
+.text-align-right{
+    text-align: right;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.font-size-xsm{
+    font-size: 8px;
+}
+.font-size-sm{
+    font-size: 10px;
+}
+.font-size-smd{
+    font-size: 13px;
+}
+.font-size-md{
+    font-size: 15px;
+}
+.font-size-ml{
+    font-size: 18px;
+}
+.font-size-lg{
+    font-size: 20px;
+}
+.font-size-xl{
+    font-size: 22px;
+}
+.font-size-xxl{
+    font-size: 25px;
+}
+.bold{
+    font-weight: 600;
+}
+.border-curve-10{
+    border-radius: 10px !important;
+}
+.border-curve-15{
+    border-radius: 15px;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.outline-none{
+    outline: none;
+}
+.display-flex{
+    display: flex;
+}
+.display-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+.justify-content-space-around{
+    justify-content: space-around;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.margin-auto{
+    margin: auto;
+}
+.call-icon-bg{
+    position: relative;
+    top: -3px;
+    right: -8px;
+    padding-bottom: 6px;
+    .fa{
+        background: #ffffff;
+        border-radius: 50%;
+        font-size: 23px;
+        padding: 15px;
+    }
+}
+.fixed-bottom{
+    z-index: 999;
+    box-shadow: 0 0 5px #d5d5d5;
+    padding: 10px 15px;
+    background-color: #fff;
+}
+.base-color {
+    color: $base-color;
+  }
+.-color {
+    color: $base-color;
+  }
+ .green-color{
+     color : $green-color;
+ } 
+ .red-color{
+    color : $red-color;
+ }
+ .secondary-color{
+    color: $secondary-color
+ }
+ .gray-color{
+    color: $gray-color
+ }
+.circle-blue{
+    border: solid 2px $base-color;
+    border-radius: 50%;
+  }
+  .display-none{
+      display: none;
+  }
+  .display-block{
+    display: block;
+}
+hr.style-gradient {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+hr.style-straight {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+.font-family-default{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.badge-custom{
+    border : 1px solid $base-color;
+    border-radius: 15px;
+    padding: 5px;
+    color: #ffffff;
+    background: $base-color;
+    text-align: center;
+    box-shadow: 0px 2px 4px #aaaaaa;
+}
+.badge-custom-red{
+    border : 1px solid $light-orange-color;
+    border-radius: 15px;
+    padding: 5px;
+    color: #000000;
+    background: $light-orange-color;
+    text-align: center;
+    box-shadow: 0px 2px 4px #aaaaaa;
+}
+#async-example{
+    max-height: 90px !important;
+    overflow-y: auto;
+    font-size: 12px;
+    font-weight: 600;
+}
+.border-bottom{
+     border-bottom: 1px solid #d0d0d0;
+}
+.break-words{
+    display: inline-block;
+    word-break: break-word;
+}
+.payment-pending{
+    background: #ff1212;
+    color: #fff;
+    box-shadow: 0px 2px 4px #aaaaaa;
+}
+.payment-success{
+    background: #53a900;
+    color: #fff;
+    box-shadow: 0px 2px 4px #aaaaaa;
+}
+.lab-test-show-div:focus{
+    background: #ffffff !important;
+}
+.color-very-light-grey{
+    color: #fafafa;
+}
+.slim{
+    font-weight: 400;
+}
+.display-table{
+    display: table;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.display-table-cell{
+    display: table-cell;
+}
+.vertical-align-middle{
+    vertical-align: middle;
+}
+
+    

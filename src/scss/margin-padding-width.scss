@@ -1,0 +1,43 @@
+$max: 50;
+$offset: 1;
+$unit: 'px'; // Feel free to change the unit.
+@mixin list-loop($className, $styleName) {
+  $i: 0;
+  @while $i <= $max {
+    #{$className + $i} { 
+      #{$styleName}: #{$i + $unit};
+    }
+    $i: $i + $offset;
+  }
+}
+
+
+$maxwidth: 100;
+$offsetwidth: 1;
+$unitwidth: '%'; // Feel free to change the unit.
+@mixin width-loop($className, $styleName) {
+  $i: 0;
+  @while $i <= $maxwidth {
+    #{$className + $i} { 
+      #{$styleName}: #{$i + $unitwidth};
+    }
+    $i: $i + $offsetwidth;
+  }
+}
+
+
+//margins
+@include list-loop('.m-t-', 'margin-top');
+@include list-loop('.m-r-', 'margin-right');
+@include list-loop('.m-b-', 'margin-bottom');
+@include list-loop('.m-l-', 'margin-left');
+@include list-loop('.m-', 'margin');
+// Paddings
+@include list-loop('.p-t-', 'padding-top');
+@include list-loop('.p-r-', 'padding-right');
+@include list-loop('.p-b-', 'padding-bottom');
+@include list-loop('.p-l-', 'padding-left');
+@include list-loop('.p-', 'padding');
+
+// width
+@include width-loop('.width-', 'width');
