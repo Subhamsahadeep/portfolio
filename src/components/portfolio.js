@@ -435,7 +435,7 @@ class PortfolioComponent extends Component {
                       Mar 28, 2019 - SSRN
                   </div>
                     <div className="font-size-sm uppercase p-t-10 p-b-10">
-                      <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S1877050920308309?via%3Dihub">See Publication</a>
+                      <a target="_blank" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3361038">See Publication</a>
                     </div>
                   </div>
                   <div className="width-25 text-align-right">
