@@ -24,6 +24,16 @@
     width: 80%;
     padding: 20px;
     text-align: center;
+    // -webkit-box-reflect: below 10px linear-gradient(transparent 75%, #2929297a)
+}
+
+@keyframes animateSubham{
+    0% , 90% ,100%{
+        width: 0%;
+    }
+    30%, 60%{
+        width: 100%;
+    }
 }
 .about-me{
     background: #1a1a1a;
@@ -97,7 +107,8 @@
   }
   .main-education-card{
       border-radius: 10px;
-      background: linear-gradient(0deg,transparent, #eaeaea 74%);
+    //   background: linear-gradient(0deg,transparent, #eaeaea 74%);
+    //   background: linear-gradient(0deg,transparent, #ffffff 90%);
   }
 
   .bs-text{
@@ -245,6 +256,10 @@
     .height-adjust-skill-card{
         height: 130px;
     }
+    .height-marks{
+        height: 105px;
+
+    }
   }
   @media only screen and (min-width: 1200px) {
     .skills-card{
@@ -263,4 +278,8 @@
     background : #000000;
     padding: 5% 5%;
     color: #ffffff;
+  }
+  .suman-sir{
+    color: #08478b;
+    text-decoration: underline;
   }

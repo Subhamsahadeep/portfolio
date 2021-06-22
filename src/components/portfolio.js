@@ -41,25 +41,29 @@ class PortfolioComponent extends Component {
     }
   }
 
-  openEmail(){
+  goToSumanSirWebsite() {
+    window.open('https://sumandeb.com/', '_blank');
+  }
+
+  openEmail() {
     window.open('mailto: subhamsahadeep@gmail.com', '_blank');
   }
-  openFB(){
+  openFB() {
     window.open('https://www.facebook.com/subhamsahadeep/', '_blank');
   }
-  openWhatsapp(){
+  openWhatsapp() {
     window.open('https://api.whatsapp.com/send?phone=+918974279359', '_blank');
   }
-  openGithub(){
+  openGithub() {
     window.open('https://github.com/Subhamsahadeep', '_blank');
   }
-  openLinkedIn(){
+  openLinkedIn() {
     window.open('https://www.linkedin.com/in/subham-saha-336170119/', '_blank');
   }
-  openInsta(){
+  openInsta() {
     window.open('https://www.instagram.com/behighforever/', '_blank');
   }
-  openCaller(){
+  openCaller() {
     window.open(`tel:+917005201073`, '_self');
   }
 
@@ -126,9 +130,9 @@ class PortfolioComponent extends Component {
                 <div className="text-align-justify display-table-cell vertical-align-middle">
                   <span className="bold">
                     <a target="_blank" href="http://rkmv.edu.in/">
-                    Ramakrishna Mission Vidyalaya
+                      Ramakrishna Mission Vidyalaya
                     </a>
-                </span> bears the sacred name of Sri Ramakrishna
+                  </span> bears the sacred name of Sri Ramakrishna
                 and is run by the esteemed organization Ramakrishna Mission,
                 Belur Math, which was founded by Swami Vivekananda himself with the objective
                 - "one’s own salvation and for the welfare of the world". Vivekananda’s concept
@@ -141,7 +145,7 @@ class PortfolioComponent extends Component {
             </Col>
           </Row>
           <Row>
-            <Col md={1}></Col>
+           <Col md={1}></Col>
             <Col sm={12} md={5}>
               <div className="education-card m-10">
                 <div className="display-flex flex-wrap">
@@ -158,7 +162,6 @@ class PortfolioComponent extends Component {
                     <div className="bold text-align-center font-size-lg">
                       95%
                         </div>
-
                   </div>
                 </div>
               </div>
@@ -180,7 +183,6 @@ class PortfolioComponent extends Component {
                     <div className="bold text-align-center font-size-lg">
                       93%
                         </div>
-
                   </div>
                 </div>
               </div>
@@ -200,10 +202,10 @@ class PortfolioComponent extends Component {
               <div className="display-table overflow-hidden height-300px">
                 <div className="text-align-justify display-table-cell vertical-align-middle">
                   <span className="bold">
-                  <a target="_blank" href="https://www.nita.ac.in/">
-                    National Institute of Technology Agartala (NIT Agartala or NITA)
+                    <a target="_blank" href="https://www.nita.ac.in/">
+                      National Institute of Technology Agartala (NIT Agartala or NITA)
                   </a>
-                </span> is a technology-oriented institute of higher education
+                  </span> is a technology-oriented institute of higher education
                 established by India's Ministry of Human Resource Development Government of
                 India in Agartala, India. It was founded as Tripura Engineering College in
                 1965 and declared a National Institute of Technology (NIT) in 2006, thus being
@@ -239,7 +241,6 @@ class PortfolioComponent extends Component {
                         10
                           </span>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -262,7 +263,7 @@ class PortfolioComponent extends Component {
         <Container className="p-t-50">
           <Row>
             <Col sm={12} md={6}>
-              <div className="main-education-card">
+              <div className="main-education-card m-b-20">
                 <div className="education-card buildsupply-card p-0">
                   <div className="width-100 p-15 text-align-center">
                     <Image src={bslogo} className="width-50"></Image>
@@ -279,7 +280,7 @@ class PortfolioComponent extends Component {
 
             </Col>
             <Col sm={12} md={6}>
-              <div className="main-education-card">
+              <div className="main-education-card m-b-20">
                 <div className="education-card medibuddy-card">
                   <div className="width-100 p-15 text-align-center">
                     <Image src={mblogo} className="width-50"></Image>
@@ -445,7 +446,7 @@ class PortfolioComponent extends Component {
                     <div className="font-size-smd">
                       Subham Saha
                       </div>
-                    <div className="font-size-smd">
+                    <div className="font-size-smd suman-sir" onClick={() => this.goToSumanSirWebsite()}>
                       Suman Deb
                       </div>
                   </div>
@@ -484,6 +485,12 @@ class PortfolioComponent extends Component {
 
 
             <Card>
+              <Card.Header>
+                <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                  Click me!
+                </Accordion.Toggle>
+              </Card.Header>
+
               <Accordion.Toggle as={Card.Header} eventKey="1" className="cursor-pointer">
                 <div className="display-flex">
                   <div className="width-75">
@@ -504,7 +511,7 @@ class PortfolioComponent extends Component {
                     <div className="font-size-smd">
                       Subham Saha
                       </div>
-                    <div className="font-size-smd">
+                    <div className="font-size-smd suman-sir" onClick={() => this.goToSumanSirWebsite()}>
                       Suman Deb
                       </div>
                   </div>
@@ -683,8 +690,8 @@ class PortfolioComponent extends Component {
             <div className="icon whatsapp" onClick={() => this.openWhatsapp()}>
               <div className="tooltip">Whatsapp</div>
               <span>
-                   <i className="fa fa-whatsapp"></i>
-                </span>
+                <i className="fa fa-whatsapp"></i>
+              </span>
             </div>
             <div className="icon instagram" onClick={() => this.openInsta()}>
               <div className="tooltip">Instagram</div>
