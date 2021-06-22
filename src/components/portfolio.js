@@ -91,7 +91,7 @@ class PortfolioComponent extends Component {
       <div className="about-me">
         <div className="font-size-xxl bold uppercase width-100">
           About Me
-          <div className="width-50 border-bottom-red p-b-3"></div>
+          <div className="border-bottom-red-animate p-b-3"></div>
         </div>
         <div>
           <div className="font-size-lg p-10 text-align-justify color-very-light-grey">
@@ -485,12 +485,6 @@ class PortfolioComponent extends Component {
 
 
             <Card>
-              <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                  Click me!
-                </Accordion.Toggle>
-              </Card.Header>
-
               <Accordion.Toggle as={Card.Header} eventKey="1" className="cursor-pointer">
                 <div className="display-flex">
                   <div className="width-75">

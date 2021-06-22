@@ -49,6 +49,21 @@
 .border-bottom-red{
     border-bottom: 1px solid red ;
 }
+.border-bottom-red-animate{
+    border-bottom: 1px solid red ;
+    transition: 0.5s;
+    width: 50%;
+    animation: bordersetup 5s linear;
+   
+}
+@keyframes bordersetup{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
 .height-400px{
     height: 400px;
 }
