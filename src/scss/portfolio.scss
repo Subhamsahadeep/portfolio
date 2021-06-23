@@ -48,9 +48,11 @@
 }
 .border-bottom-red{
     border-bottom: 1px solid red ;
+    border-radius: 15px;
 }
 .border-bottom-red-animate{
-    border-bottom: 1px solid red ;
+    border-bottom: 3px solid red ;
+    border-radius: 15px;
     transition: 0.5s;
     width: 50%;
     animation: bordersetup 5s linear;
