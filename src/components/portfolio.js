@@ -91,7 +91,7 @@ class PortfolioComponent extends Component {
                 <Typical
                   steps={[
                     'javascript', 
-                    1000, 
+                    2000, 
                     'React', 
                     2000, 
                     'Node Js', 
