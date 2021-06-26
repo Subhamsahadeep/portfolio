@@ -31,6 +31,7 @@ import hackerrank from '../assets/hackerrank.jpeg';
 import udemy from '../assets/udemy.jpeg';
 import certificate from '../assets/certificate.png';
 import iitkgp from '../assets/iitkgp.png';
+import Aos from "aos";
 
 class PortfolioComponent extends Component {
   constructor(props) {
@@ -39,6 +40,9 @@ class PortfolioComponent extends Component {
     this.state = {
       name: "Subham Saha"
     }
+  }
+  componentDidMount(){
+    Aos.init({duration: 2000});
   }
 
   goToSumanSirWebsite() {
@@ -71,10 +75,10 @@ class PortfolioComponent extends Component {
     return (
       <Jumbotron fluid className="m-b-0">
         <Container>
-          <div className="intro">
+          <div className="intro" data-aos="fade"  data-aos-offset="500" data-aos-easing="ease-in-out-cubic" data-aos-duration="5000">
             <div className="uppercase slim"> Welcome to my world</div>
             <div className="name">
-              Hi, I'm SUBHAM SAHA
+              Hi, I'm <span> SUBHAM SAHA </span>
         </div>
             <div className="location p-t-10">
               based in INDIA
@@ -94,7 +98,7 @@ class PortfolioComponent extends Component {
           <div className="border-bottom-red-animate p-b-3"></div>
         </div>
         <div>
-          <div className="font-size-lg p-10 text-align-justify color-very-light-grey">
+          <div className="font-size-lg p-10 text-align-justify color-very-light-grey" data-aos="fade-left">
             I am a full-stack Web Application Developer and Software Developer,
             currently living in Bengaluru, India. I am having 2+ years of experience. Apart from that, I
             have a Bachelor of Technology in Computer Science and Engineering from NIT Agartala, India.
@@ -121,13 +125,13 @@ class PortfolioComponent extends Component {
         <Container className="p-t-20">
           <Row>
             <Col sm={12} md={6}>
-              <div>
+              <div data-aos="fade-right">
                 <Image src={rkm} className="width-100 p-10" />
               </div>
             </Col>
             <Col sm={12} md={6}>
               <div className="display-table overflow-hidden height-400px">
-                <div className="text-align-justify display-table-cell vertical-align-middle">
+                <div className="text-align-justify display-table-cell vertical-align-middle" data-aos="fade-left">
                   <span className="bold">
                     <a target="_blank" href="http://rkmv.edu.in/">
                       Ramakrishna Mission Vidyalaya
@@ -147,7 +151,7 @@ class PortfolioComponent extends Component {
           <Row>
            <Col md={1}></Col>
             <Col sm={12} md={5}>
-              <div className="education-card m-10">
+              <div className="education-card m-10" data-aos="zoom-out-up"  data-aos-duration="2000">
                 <div className="display-flex flex-wrap">
                   <div className="logo-width margin-auto text-align-center">
                     <Image src={cbse} className="p-10" />
@@ -168,7 +172,7 @@ class PortfolioComponent extends Component {
             </Col>
 
             <Col sm={12} md={5}>
-              <div className="education-card m-10">
+              <div className="education-card m-10" data-aos="zoom-out-up"  data-aos-duration="2000">
                 <div className="display-flex flex-wrap">
                   <div className="logo-width margin-auto text-align-center">
                     <Image src={cbse} className="p-10" />
@@ -194,12 +198,12 @@ class PortfolioComponent extends Component {
         <Container className="p-t-20">
           <Row>
             <Col sm={12} md={6}>
-              <div>
+              <div data-aos="fade-right">
                 <Image src={nita1} className="width-100 p-10" />
               </div>
             </Col>
             <Col sm={12} md={6}>
-              <div className="display-table overflow-hidden height-300px">
+              <div className="display-table overflow-hidden height-300px" data-aos="fade-left">
                 <div className="text-align-justify display-table-cell vertical-align-middle">
                   <span className="bold">
                     <a target="_blank" href="https://www.nita.ac.in/">
@@ -218,7 +222,7 @@ class PortfolioComponent extends Component {
           <Row>
             <Col md={3}></Col>
             <Col sm={12} md={6}>
-              <div className="education-card m-10">
+              <div className="education-card m-10" data-aos="zoom-out-up" data-aos-duration="2000">
                 <div className="display-flex flex-wrap">
                   <div className="logo-width margin-auto text-align-center">
                     <Image src={nitalogo} className="p-10" />
@@ -263,7 +267,7 @@ class PortfolioComponent extends Component {
         <Container className="p-t-50">
           <Row>
             <Col sm={12} md={6}>
-              <div className="main-education-card m-b-20">
+              <div className="main-education-card m-b-20"  data-aos="flip-down" data-aos-offset="10" data-aos-easing="ease-in-out-cubic" data-aos-duration="2000">
                 <div className="education-card buildsupply-card p-0">
                   <div className="width-100 p-15 text-align-center">
                     <Image src={bslogo} className="width-50"></Image>
@@ -280,7 +284,7 @@ class PortfolioComponent extends Component {
 
             </Col>
             <Col sm={12} md={6}>
-              <div className="main-education-card m-b-20">
+              <div className="main-education-card m-b-20" data-aos="flip-down" data-aos-offset="10" data-aos-easing="ease-in-out-cubic" data-aos-duration="2000">
                 <div className="education-card medibuddy-card">
                   <div className="width-100 p-15 text-align-center">
                     <Image src={mblogo} className="width-50"></Image>
@@ -307,7 +311,7 @@ class PortfolioComponent extends Component {
         <Container className="p-t-30">
 
           <div className="display-flex justify-content-space-around flex-wrap width-100">
-            <div className="skills-card">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={react} className="width-100"></Image>
               </div>
@@ -315,7 +319,7 @@ class PortfolioComponent extends Component {
                 REACT
               </div>
             </div>
-            <div className="skills-card">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={angular} className="width-100"></Image>
               </div>
@@ -323,7 +327,7 @@ class PortfolioComponent extends Component {
                 Angular
               </div>
             </div>
-            <div className="skills-card">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={js} className="width-69"></Image>
               </div>
@@ -331,7 +335,7 @@ class PortfolioComponent extends Component {
                 JavaScript
               </div>
             </div>
-            <div className="skills-card">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={nodejs} className="width-69 m-t-25"></Image>
               </div>
@@ -341,7 +345,7 @@ class PortfolioComponent extends Component {
             </div>
 
 
-            <div className="skills-card">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={html} className="width-69"></Image>
               </div>
@@ -349,7 +353,7 @@ class PortfolioComponent extends Component {
                 HTML
               </div>
             </div>
-            <div className="skills-card">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={css} className="width-69"></Image>
               </div>
@@ -357,7 +361,7 @@ class PortfolioComponent extends Component {
                 CSS
               </div>
             </div>
-            <div className="skills-card">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={scss} className="width-69"></Image>
               </div>
@@ -365,7 +369,7 @@ class PortfolioComponent extends Component {
                 SCSS
               </div>
             </div>
-            <div className="skills-card">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={bootstrap} className="width-69"></Image>
               </div>
@@ -374,7 +378,7 @@ class PortfolioComponent extends Component {
               </div>
             </div>
 
-            <div className="skills-card">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={ts} className="width-69"></Image>
               </div>
@@ -383,7 +387,7 @@ class PortfolioComponent extends Component {
               </div>
             </div>
 
-            <div className="skills-card">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={gulp} className="width-35"></Image>
               </div>
@@ -392,7 +396,7 @@ class PortfolioComponent extends Component {
               </div>
             </div>
 
-            <div className="skills-card">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={java} className="width-80"></Image>
               </div>
@@ -402,7 +406,7 @@ class PortfolioComponent extends Component {
             </div>
 
 
-            <div className="skills-card">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={cplus} className="width-100 p-t-10 "></Image>
               </div>
@@ -425,7 +429,7 @@ class PortfolioComponent extends Component {
         </div>
         <div className="p-t-25">
           <Accordion>
-            <Card>
+            <Card data-aos="fade-up-left"  data-aos-duration="2500">
               <Accordion.Toggle as={Card.Header} eventKey="0" className="cursor-pointer">
                 <div className="display-flex">
                   <div className="width-75">
@@ -484,7 +488,7 @@ class PortfolioComponent extends Component {
             </Card>
 
 
-            <Card>
+            <Card data-aos="fade-up-right" data-aos-duration="2500">
               <Accordion.Toggle as={Card.Header} eventKey="1" className="cursor-pointer">
                 <div className="display-flex">
                   <div className="width-75">
@@ -555,7 +559,7 @@ class PortfolioComponent extends Component {
           Internships and Certifications
           <div className="width-50 border-bottom-red p-b-3"></div>
         </div>
-        <div className="certifaction-card display-flex flex-wrap m-15">
+        <div className="certifaction-card display-flex flex-wrap m-15" data-aos="zoom-out-up"  data-aos-duration="2000">
           <div className="width-10">
             <Image src={hackerrank} className="width-100"></Image>
           </div>
@@ -582,7 +586,7 @@ class PortfolioComponent extends Component {
           </div>
         </div>
 
-        <div className="certifaction-card display-flex flex-wrap m-15">
+        <div className="certifaction-card display-flex flex-wrap m-15"  data-aos="zoom-out-up"  data-aos-duration="2000">
           <div className="width-10">
             <Image src={iitkgp} className="width-100"></Image>
           </div>
@@ -610,7 +614,7 @@ class PortfolioComponent extends Component {
           </div>
         </div>
 
-        <div className="certifaction-card display-flex flex-wrap m-15">
+        <div className="certifaction-card display-flex flex-wrap m-15"  data-aos="zoom-out-up"  data-aos-duration="2000">
           <div className="width-10">
             <Image src={nitalogo} className="width-100"></Image>
           </div>
@@ -637,7 +641,7 @@ class PortfolioComponent extends Component {
           </div>
         </div>
 
-        <div className="certifaction-card display-flex flex-wrap m-15">
+        <div className="certifaction-card display-flex flex-wrap m-15"  data-aos="zoom-out-up"  data-aos-duration="2000">
           <div className="width-10">
             <Image src={udemy} className="width-100"></Image>
           </div>
@@ -671,11 +675,11 @@ class PortfolioComponent extends Component {
   sectionFooter() {
     return (
       <div className="contact-card">
-        <div className="font-size-xxl bold uppercase text-align-center width-100">
+        <div className="font-size-xxl bold uppercase text-align-center width-100"  data-aos="fade"> 
           Contact
           <div className="margin-auto width-50 border-bottom-red p-b-3"></div>
         </div>
-        <div className="text-align-center m-t-30">
+        <div className="text-align-center m-t-30" data-aos="fade">
           <div className="wrapper">
             <div className="icon facebook" onClick={() => this.openFB()}>
               <div className="tooltip">Facebook</div>
@@ -702,7 +706,7 @@ class PortfolioComponent extends Component {
           </div>
         </div>
 
-        <div>
+        <div data-aos="fade">
           <div className="text-align-center p-10">
             <div>
               <span><i className="fa fa-envelope"></i></span>

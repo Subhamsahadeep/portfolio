@@ -6,3 +6,8 @@ $fa-font-path: "~font-awesome/fonts";
 @import "./layout.scss";
 @import "./portfolio.scss";
 @import "./button-footer.scss";
+@import "aos/dist/aos.css";
+
+#root{
+    overflow: hidden;
+}
