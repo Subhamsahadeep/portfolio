@@ -148,10 +148,12 @@ class PortfolioComponent extends Component {
         </div>
 
         <Container className="p-t-20">
-          <Row>
+          <Row className="p-b-20">
             <Col sm={12} md={6}>
               <div data-aos="fade-right">
-                <Image src={rkm} className="width-100 p-10" />
+                <div className="p-10">
+                  <Image src={rkm} className="width-100 image-border-shadow" />
+                </div>
               </div>
             </Col>
             <Col sm={12} md={6}>
@@ -173,7 +175,7 @@ class PortfolioComponent extends Component {
               </div>
             </Col>
           </Row>
-          <Row>
+          <Row className="p-b-20">
             <Col md={1}></Col>
             <Col sm={12} md={5}>
               <div className="education-card m-10" data-aos="zoom-out-up" data-aos-duration="1500">
@@ -221,10 +223,12 @@ class PortfolioComponent extends Component {
         </Container>
 
         <Container className="p-t-20">
-          <Row>
+          <Row className="p-b-20">
             <Col sm={12} md={6}>
               <div data-aos="fade-right">
-                <Image src={nita1} className="width-100 p-10" />
+              <div className="p-10">
+                <Image src={nita1} className="width-100 image-border-shadow" />
+                </div>
               </div>
             </Col>
             <Col sm={12} md={6}>
@@ -244,7 +248,7 @@ class PortfolioComponent extends Component {
               </div>
             </Col>
           </Row>
-          <Row>
+          <Row className="p-b-20">
             <Col md={3}></Col>
             <Col sm={12} md={6}>
               <div className="education-card m-10" data-aos="zoom-out-up" data-aos-duration="1500">
