@@ -52,6 +52,12 @@ class PortfolioComponent extends Component {
   openEmail() {
     window.open('mailto: subhamsahadeep@gmail.com', '_blank');
   }
+  openBuildSupply(){
+    window.open('https://buildsupply.com/','_blank');
+  }
+  openMedibuddy(){
+    window.open('https://medibuddy.in/','_blank');
+  }
   openFB() {
     window.open('https://www.facebook.com/subhamsahadeep/', '_blank');
   }
@@ -78,7 +84,7 @@ class PortfolioComponent extends Component {
           <div className="intro" data-aos="fade" data-aos-offset="500" data-aos-easing="ease-in-out-cubic" data-aos-duration="5000">
             <div className="uppercase slim"> Welcome to my world</div>
             <div className="name">
-              Hi, I'm <span>SUBHAM SAHA</span>
+              Hi, I'm <span> <span className="letter-S-name">S</span>UBHAM <span className="letter-S-name">S</span>AHA</span>
             </div>
             <div className="location p-t-10">
               <div className="dynamic-texts">
@@ -170,7 +176,7 @@ class PortfolioComponent extends Component {
           <Row>
             <Col md={1}></Col>
             <Col sm={12} md={5}>
-              <div className="education-card m-10" data-aos="zoom-out-up" data-aos-duration="2000">
+              <div className="education-card m-10" data-aos="zoom-out-up" data-aos-duration="1500">
                 <div className="display-flex flex-wrap">
                   <div className="logo-width margin-auto text-align-center">
                     <Image src={cbse} className="p-10" />
@@ -191,7 +197,7 @@ class PortfolioComponent extends Component {
             </Col>
 
             <Col sm={12} md={5}>
-              <div className="education-card m-10" data-aos="zoom-out-up" data-aos-duration="2000">
+              <div className="education-card m-10" data-aos="zoom-out-up" data-aos-duration="1500">
                 <div className="display-flex flex-wrap">
                   <div className="logo-width margin-auto text-align-center">
                     <Image src={cbse} className="p-10" />
@@ -241,7 +247,7 @@ class PortfolioComponent extends Component {
           <Row>
             <Col md={3}></Col>
             <Col sm={12} md={6}>
-              <div className="education-card m-10" data-aos="zoom-out-up" data-aos-duration="2000">
+              <div className="education-card m-10" data-aos="zoom-out-up" data-aos-duration="1500">
                 <div className="display-flex flex-wrap">
                   <div className="logo-width margin-auto text-align-center">
                     <Image src={nitalogo} className="p-10" />
@@ -281,12 +287,13 @@ class PortfolioComponent extends Component {
     return (
       <div className="experience">
         <div className="work-experience-text">
-          EXPERIENCE
+          {/* EXPERIENCE */}
+          I am proud to be associated with these amazing companies
       </div>
         <Container className="p-t-50">
           <Row>
             <Col sm={12} md={6}>
-              <div className="main-education-card m-b-20" data-aos="flip-down" data-aos-offset="10" data-aos-easing="ease-in-out-cubic" data-aos-duration="2000">
+              <div className="main-education-card m-b-20 cursor-pointer" data-aos="flip-down" data-aos-offset="10" data-aos-easing="ease-in-out-cubic" data-aos-duration="1500" onClick={() => this.openBuildSupply()}>
                 <div className="education-card buildsupply-card p-0">
                   <div className="width-100 p-15 text-align-center">
                     <Image src={bslogo} className="width-50"></Image>
@@ -303,7 +310,7 @@ class PortfolioComponent extends Component {
 
             </Col>
             <Col sm={12} md={6}>
-              <div className="main-education-card m-b-20" data-aos="flip-down" data-aos-offset="10" data-aos-easing="ease-in-out-cubic" data-aos-duration="2000">
+              <div className="main-education-card m-b-20 cursor-pointer" data-aos="flip-down" data-aos-offset="10" data-aos-easing="ease-in-out-cubic" data-aos-duration="1500" onClick={() => this.openMedibuddy()}>
                 <div className="education-card medibuddy-card">
                   <div className="width-100 p-15 text-align-center">
                     <Image src={mblogo} className="width-50"></Image>
@@ -325,12 +332,12 @@ class PortfolioComponent extends Component {
     return (
       <div className="skills">
         <div className="skills-text">
-          SKILLS
-    </div>
+          I've expertised in...
+        </div>
         <Container className="p-t-30">
 
           <div className="display-flex justify-content-space-around flex-wrap width-100">
-            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="1500">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={react} className="width-100"></Image>
               </div>
@@ -338,7 +345,7 @@ class PortfolioComponent extends Component {
                 REACT
               </div>
             </div>
-            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="1500">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={angular} className="width-100"></Image>
               </div>
@@ -346,7 +353,7 @@ class PortfolioComponent extends Component {
                 Angular
               </div>
             </div>
-            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="1500">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={js} className="width-69"></Image>
               </div>
@@ -354,7 +361,7 @@ class PortfolioComponent extends Component {
                 JavaScript
               </div>
             </div>
-            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="1500">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={nodejs} className="width-69 m-t-25"></Image>
               </div>
@@ -364,7 +371,7 @@ class PortfolioComponent extends Component {
             </div>
 
 
-            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="1500">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={html} className="width-69"></Image>
               </div>
@@ -372,7 +379,7 @@ class PortfolioComponent extends Component {
                 HTML
               </div>
             </div>
-            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="1500">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={css} className="width-69"></Image>
               </div>
@@ -380,7 +387,7 @@ class PortfolioComponent extends Component {
                 CSS
               </div>
             </div>
-            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="1500">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={scss} className="width-69"></Image>
               </div>
@@ -388,7 +395,7 @@ class PortfolioComponent extends Component {
                 SCSS
               </div>
             </div>
-            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="1500">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={bootstrap} className="width-69"></Image>
               </div>
@@ -397,7 +404,7 @@ class PortfolioComponent extends Component {
               </div>
             </div>
 
-            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="1500">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={ts} className="width-69"></Image>
               </div>
@@ -406,7 +413,7 @@ class PortfolioComponent extends Component {
               </div>
             </div>
 
-            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="1500">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={gulp} className="width-35"></Image>
               </div>
@@ -415,7 +422,7 @@ class PortfolioComponent extends Component {
               </div>
             </div>
 
-            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="1500">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={java} className="width-80"></Image>
               </div>
@@ -425,7 +432,7 @@ class PortfolioComponent extends Component {
             </div>
 
 
-            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="1500">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={cplus} className="width-100 p-t-10 "></Image>
               </div>
@@ -578,7 +585,7 @@ class PortfolioComponent extends Component {
           Internships and Certifications
           <div className="width-50 border-bottom-red p-b-3"></div>
         </div>
-        <div className="certifaction-card display-flex flex-wrap m-15" data-aos="zoom-out-up" data-aos-duration="2000">
+        <div className="certifaction-card display-flex flex-wrap m-15" data-aos="zoom-out-up" data-aos-duration="1500">
           <div className="width-10">
             <Image src={hackerrank} className="width-100"></Image>
           </div>
@@ -605,7 +612,7 @@ class PortfolioComponent extends Component {
           </div>
         </div>
 
-        <div className="certifaction-card display-flex flex-wrap m-15" data-aos="zoom-out-up" data-aos-duration="2000">
+        <div className="certifaction-card display-flex flex-wrap m-15" data-aos="zoom-out-up" data-aos-duration="1500">
           <div className="width-10">
             <Image src={iitkgp} className="width-100"></Image>
           </div>
@@ -633,7 +640,7 @@ class PortfolioComponent extends Component {
           </div>
         </div>
 
-        <div className="certifaction-card display-flex flex-wrap m-15" data-aos="zoom-out-up" data-aos-duration="2000">
+        <div className="certifaction-card display-flex flex-wrap m-15" data-aos="zoom-out-up" data-aos-duration="1500">
           <div className="width-10">
             <Image src={nitalogo} className="width-100"></Image>
           </div>
@@ -660,7 +667,7 @@ class PortfolioComponent extends Component {
           </div>
         </div>
 
-        <div className="certifaction-card display-flex flex-wrap m-15" data-aos="zoom-out-up" data-aos-duration="2000">
+        <div className="certifaction-card display-flex flex-wrap m-15" data-aos="zoom-out-up" data-aos-duration="1500">
           <div className="width-10">
             <Image src={udemy} className="width-100"></Image>
           </div>
