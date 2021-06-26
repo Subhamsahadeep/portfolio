@@ -66,7 +66,7 @@
         width: 50%;
     }
 }
-.height-400px{
+.height-rkm-text{
     height: 400px;
 }
 .height-300px{
@@ -214,6 +214,12 @@
         -webkit-text-fill-color: transparent;
         text-align: center;
       }
+      .responsive-text{
+        font-size: 13px;
+    }
+    .height-rkm-text{
+        height: 300px;
+    }
   }
 @media only screen and (min-width: 428px) and (max-width: 600px) {
     .skills-card{
@@ -249,6 +255,12 @@
         -webkit-text-fill-color: transparent;
         text-align: center;
       }
+      .responsive-text{
+        font-size: 13px;
+    }
+    .height-rkm-text{
+        height: 300px;
+    }
   }
   @media only screen and (min-width: 600px) and (max-width: 768px){
     .skills-card{
@@ -284,6 +296,12 @@
         -webkit-text-fill-color: transparent;
         text-align: center;
       }
+      .responsive-text{
+        font-size: 15px;
+    }
+    .height-rkm-text{
+        height: 300px;
+    }
   }
   @media only screen and (min-width: 768px)  and (max-width: 992px) {
     .skills-card{
@@ -310,6 +328,9 @@
         -webkit-text-fill-color: transparent;
         text-align: center;
       }
+      .responsive-text{
+        font-size: 20px;
+    }
   }
 
   @media only screen and (min-width: 992px) {
@@ -334,6 +355,9 @@
         font-family: Ubuntu;
         text-shadow : 1px 1px 20px #00ffdf
     }
+    .responsive-text{
+        font-size: 20px;
+    }
   }
   @media only screen and (min-width: 1200px) {
     .skills-card{
@@ -353,6 +377,9 @@
         color: turquoise;
         font-family: Ubuntu;
         text-shadow : 1px 1px 20px #00ffdf
+    }
+    .responsive-text{
+        font-size: 20px;
     }
   }
   .contact-card{

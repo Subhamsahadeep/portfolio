@@ -123,7 +123,7 @@ class PortfolioComponent extends Component {
           <div className="border-bottom-red-animate p-b-3"></div>
         </div>
         <div>
-          <div className="font-size-lg p-10 text-align-justify color-very-light-grey" data-aos="fade-left">
+          <div className="responsive-text p-10 text-align-justify color-very-light-grey" data-aos="fade-left">
             I am a full-stack Web Application Developer and Software Developer,
             currently living in Bengaluru, India. I am having 2+ years of experience. Apart from that, I
             have a Bachelor of Technology in Computer Science and Engineering from NIT Agartala, India.
@@ -157,8 +157,8 @@ class PortfolioComponent extends Component {
               </div>
             </Col>
             <Col sm={12} md={6}>
-              <div className="display-table overflow-hidden height-400px">
-                <div className="text-align-justify display-table-cell vertical-align-middle" data-aos="fade-left">
+              <div className="display-table overflow-hidden height-rkm-text">
+                <div className="text-align-justify display-table-cell vertical-align-middle responsive-text" data-aos="fade-left">
                   <span className="bold">
                     <a target="_blank" href="http://rkmv.edu.in/">
                       Ramakrishna Mission Vidyalaya
@@ -233,7 +233,7 @@ class PortfolioComponent extends Component {
             </Col>
             <Col sm={12} md={6}>
               <div className="display-table overflow-hidden height-300px" data-aos="fade-left">
-                <div className="text-align-justify display-table-cell vertical-align-middle">
+                <div className="text-align-justify display-table-cell vertical-align-middle responsive-text">
                   <span className="bold">
                     <a target="_blank" href="https://www.nita.ac.in/">
                       National Institute of Technology Agartala (NIT Agartala or NITA)
