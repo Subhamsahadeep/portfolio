@@ -7,7 +7,11 @@ $fa-font-path: "~font-awesome/fonts";
 @import "./portfolio.scss";
 @import "./button-footer.scss";
 @import "aos/dist/aos.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 
 #root{
     overflow: hidden;
+    font-family: 'Roboto';
+    letter-spacing: 1px;
 }
