@@ -84,7 +84,7 @@ class PortfolioComponent extends Component {
           <div className="intro" data-aos="fade" data-aos-offset="500" data-aos-easing="ease-in-out-cubic" data-aos-duration="5000">
             <div className="uppercase slim"> Welcome to my world</div>
             <div className="name">
-              Hi, I'm <span> <span className="letter-S-name">S</span>UBHAM <span className="letter-S-name">S</span>AHA</span>
+              Hi, I'm <span> SUBHAM SAHA</span>
             </div>
             <div className="location p-t-10">
               <div className="dynamic-texts">
