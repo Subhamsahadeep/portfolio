@@ -79,9 +79,10 @@ class PortfolioComponent extends Component {
 
   sectionHeader() {
     return (
+      <div className="main-jumbo-div">
       <Jumbotron fluid className="m-b-0">
         <Container>
-          <div className="intro" data-aos="fade" data-aos-offset="500" data-aos-easing="ease-in-out-cubic" data-aos-duration="5000">
+          <div className="intro" data-aos="fade" data-aos-offset="200" data-aos-easing="ease-in-out-cubic" data-aos-duration="2000">
             <div className="uppercase slim"> Welcome to my world</div>
             <div className="name">
               Hi, I'm <span> SUBHAM SAHA</span>
@@ -112,6 +113,7 @@ class PortfolioComponent extends Component {
 
         </Container>
       </Jumbotron>
+      </div>
     )
   }
 

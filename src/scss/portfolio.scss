@@ -1,5 +1,5 @@
 .jumbotron {
-    background-image: url("../assets/subham-back.jpg");
+    background-image: url("../assets/subham-link-background copy-1 copy.jpg");
     background-size: cover;
     padding: 10em 3em;
     color: #fff;
@@ -17,7 +17,7 @@
 .intro{
     color: white;
     font-weight: bold;
-    border: 3px solid #f1f1f1;
+    // border: 3px solid #f1f1f1;
     text-align: center;
     margin: auto;
     z-index: 2;
@@ -193,21 +193,21 @@
     .logo-width{
         width: 100%;
     }
-    .intro{
-        color: white;
-        font-weight: bold;
-        border: 3px solid #f1f1f1;
-        margin: auto;
-        z-index: 2;
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-    }
-    .name{
-        font-size: 30px;
-        font-weight: 900;
-        font-family: revert;
-      }
+    // .intro{
+    //     color: white;
+    //     font-weight: bold;
+    //     border: 3px solid #f1f1f1;
+    //     margin: auto;
+    //     z-index: 2;
+    //     width: 100%;
+    //     padding: 10px;
+    //     text-align: center;
+    // }
+    // .name{
+    //     font-size: 30px;
+    //     font-weight: 900;
+    //     font-family: revert;
+    //   }
       .work-experience-text {
         font-size: 20px;
         // background: -webkit-linear-gradient(#000000,#656565);
@@ -226,6 +226,36 @@
     .skills-text {
         font-size: 30px;
       }
+
+    .main-jumbo-div{
+        background: #000000;
+    }
+    .jumbotron {
+        background-image: url("../assets/subham-link-background copy-1 copy.jpg");
+        background-size: cover;
+        padding-top: 10em;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        color: #fff;
+    }
+    .name{
+        font-size: 25px;
+        font-weight: 900;
+        font-family: revert;
+    }
+    .intro{
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+        z-index: 2;
+        width: 80%;
+        padding: 20px 0px 20px 0px;
+        text-align: center;
+        // -webkit-box-reflect: below 10px linear-gradient(transparent 75%, #2929297a)
+    }
+
   }
 @media only screen and (min-width: 428px) and (max-width: 600px) {
     .skills-card{
@@ -272,6 +302,36 @@
     .skills-text {
         font-size: 30px;
       }
+      .main-jumbo-div{
+        background: #000000;
+    }
+    .jumbotron {
+        background-image: url("../assets/subham-link-background copy-1 copy.jpg");
+        background-size: cover;
+        padding-top: 10em;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        color: #fff;
+    }
+    .name{
+        font-size: 25px;
+        font-weight: 900;
+        font-family: revert;
+    }
+    .intro{
+        color: white;
+        font-weight: bold;
+        border: none;
+        text-align: center;
+        margin: auto;
+        z-index: 2;
+        width: 80%;
+        padding: 20px 0px 10px 0px;
+        text-align: center;
+        // -webkit-box-reflect: below 10px linear-gradient(transparent 75%, #2929297a)
+    }
+
   }
   @media only screen and (min-width: 600px) and (max-width: 768px){
     .skills-card{
@@ -317,6 +377,36 @@
     .skills-text {
         font-size: 30px;
       }
+
+      .main-jumbo-div{
+        background: #000000;
+    }
+    .jumbotron {
+        background-image: url("../assets/subham-link-background copy-1 copy.jpg");
+        background-size: cover;
+        padding-top: 10em;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        color: #fff;
+    }
+    .name{
+        font-size: 25px;
+        font-weight: 900;
+        font-family: revert;
+    }
+    .intro{
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+        z-index: 2;
+        width: 80%;
+        padding: 20px 0px 20px 0px;
+        text-align: center;
+        // -webkit-box-reflect: below 10px linear-gradient(transparent 75%, #2929297a)
+    }
+
   }
   @media only screen and (min-width: 768px)  and (max-width: 992px) {
     .skills-card{
@@ -346,6 +436,31 @@
       }
       .responsive-text{
         font-size: 20px;
+    }
+
+    .main-jumbo-div{
+        background: #000000;
+    }
+    .jumbotron {
+        background-image: url("../assets/subham-link-background copy-1 copy.jpg");
+        background-size: cover;
+        padding: 10em 3em;
+        color: #fff;
+    }
+    .name{
+        font-size: 28px;
+        font-weight: 900;
+        font-family: revert;
+    }
+    .intro{
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+        z-index: 2;
+        width: 80%;
+        text-align: center;
+        // -webkit-box-reflect: below 10px linear-gradient(transparent 75%, #2929297a)
     }
   }
 
@@ -419,3 +534,5 @@
     padding: 2px;
     box-shadow: 0 8px 6px -6px black;
 }
+
+
