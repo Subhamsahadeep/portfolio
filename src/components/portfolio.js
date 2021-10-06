@@ -23,6 +23,7 @@ import scss from "../assets/scss.png";
 import bootstrap from "../assets/bootstrap.png";
 import ts from "../assets/ts.png";
 import gulp from "../assets/gulp.png";
+import tailwind from "../assets/tailwind.png";
 import java from "../assets/java.png";
 import cplus from "../assets/cplus.png";
 import Accordion from 'react-bootstrap/Accordion';
@@ -421,10 +422,10 @@ class PortfolioComponent extends Component {
 
             <div className="skills-card" data-aos="zoom-in-up" data-aos-duration="1500">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={gulp} className="width-35"></Image>
+                <Image src={tailwind} className="width-80"></Image>
               </div>
               <div className="bold text-align-center">
-                Gulp
+                Tailwind CSS
               </div>
             </div>
 
@@ -634,7 +635,7 @@ class PortfolioComponent extends Component {
             </div>
 
             <div className="uppercase font-size-sm p-t-10">
-              <a target="_blank" href="https://drive.google.com/file/d/1oHS-1vI71xwXmd9VuEWSYqx0O2GqynfY/view?usp=sharing">See Certification</a>
+              <a target="_blank" href="https://drive.google.com/file/d/1I4kma-Crd9wJwLkbWeBITAyByFBEQyA9/view?usp=sharing">See Certification</a>
             </div>
           </div>
           <div className="width-20 text-align-right">
@@ -661,7 +662,7 @@ class PortfolioComponent extends Component {
               December 2018
             </div>
             <div className="uppercase font-size-sm p-t-10">
-              <a target="_blank" href="https://drive.google.com/file/d/16GeZyPmx2WgKFSgFRnf_LN3er8sU3bxo/view?usp=drivesdk">See Certification</a>
+              <a target="_blank" href="https://drive.google.com/file/d/1qQJiVZlT24nYq7O_AmwEtGUpvxU5pQCT/view?usp=sharing">See Certification</a>
             </div>
           </div>
           <div className="width-20 text-align-right">
@@ -688,7 +689,7 @@ class PortfolioComponent extends Component {
               September 2018
             </div>
             <div className="uppercase font-size-sm p-t-10">
-              <a target="_blank" href="https://drive.google.com/drive/u/0/folders/1NtzF7W7hir2pvh-MkatDA3NIsjS4YHtu">See Certification</a>
+              <a target="_blank" href="https://drive.google.com/file/d/12IeFXYDQA2QrBgtY1QFUOnxAuSkr3a5k/view?usp=sharing">See Certification</a>
             </div>
           </div>
           <div className="width-20 text-align-right">
