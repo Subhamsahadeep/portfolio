@@ -154,7 +154,7 @@ class PortfolioComponent extends Component {
           <Row className="p-b-20">
             <Col sm={12} md={6}>
               <div data-aos="fade-right">
-                <div className="p-10">
+                <div className="education-image-div p-10">
                   <Image src={rkm} className="width-100 image-border-shadow" />
                 </div>
               </div>
@@ -229,7 +229,7 @@ class PortfolioComponent extends Component {
           <Row className="p-b-20">
             <Col sm={12} md={6}>
               <div data-aos="fade-right">
-              <div className="p-10">
+              <div className="education-image-div p-10">
                 <Image src={nita1} className="width-100 image-border-shadow" />
                 </div>
               </div>
