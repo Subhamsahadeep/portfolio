@@ -92,7 +92,7 @@ class PortfolioComponent extends Component {
               <div className="dynamic-texts">
                 <Typical
                   steps={[
-                    'javascript', 
+                    'Javascript', 
                     2000, 
                     'React', 
                     2000, 
