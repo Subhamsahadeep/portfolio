@@ -6,9 +6,9 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Route exact path="/" component={PortfolioComponent} />
+        <Route exact path="/portfolio" component={PortfolioComponent} />
         <Route exact path="*">
-          <Redirect to="/" />
+          <Redirect to="/portfolio" />
         </Route>
       </BrowserRouter>
     </div>

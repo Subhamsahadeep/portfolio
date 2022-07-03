@@ -84,7 +84,7 @@ class PortfolioComponent extends Component {
       <Jumbotron fluid className="m-b-0">
         <Container>
           <div className="intro" data-aos="fade" data-aos-offset="200" data-aos-easing="ease-in-out-cubic" data-aos-duration="2000">
-            <div className="uppercase slim"> Welcome to my world</div>
+            <div className="uppercase slim"> Thank you for visiting </div>
             <div className="name">
               Hi, I'm <span> SUBHAM SAHA</span>
             </div>
