@@ -233,7 +233,7 @@ class PortfolioNewComponent extends Component {
 
               </div>
 
-              <div className="more-details" onClick={() => this.onClickMoreDetails("school")}>
+              <div className="more-details m-10" onClick={() => this.onClickMoreDetails("school")}>
                 {
                   !this.state.moreDetailsSchool ? 'More' : "Less"
                 }
@@ -304,7 +304,7 @@ class PortfolioNewComponent extends Component {
 
               </div>
 
-              <div className="more-details-nita" onClick={() => this.onClickMoreDetails("nita")}>
+              <div className="more-details-nita m-10" onClick={() => this.onClickMoreDetails("nita")}>
                 {
                   !this.state.moreDetailsNita ? 'More' : "Less"
                 }
@@ -368,7 +368,7 @@ class PortfolioNewComponent extends Component {
     return (
       <div>
         <div className="skills-text m-b-20">
-          I've expertised in...
+          I'm expertised in...
         </div>
 
         <Slideshow></Slideshow>

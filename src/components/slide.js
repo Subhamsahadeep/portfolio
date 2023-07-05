@@ -11,7 +11,7 @@ const divStyle = {
   height: '250px',
   width: '100%',
   background:'#000000',
-  fontSize:'100px',
+  fontSize:'80px',
   letterSpacing: '10px',
   textTransform:'uppercase'
 }
@@ -42,7 +42,7 @@ const slideImages = [
   {
     background:'#000000',
     caption: 'Node JS',
-    backgroundImage: `-webkit-radial-gradient(circle, rgba(128,253,255,1) 0%, rgba(255,234,10,1) 100%)`
+    backgroundImage: `-webkit-linear-gradient(90deg, rgba(255,214,83,1) 0%, rgba(219,255,231,1) 100%)`
   },
   {
     background:'#000000',
@@ -61,9 +61,10 @@ export const Slideshow = () => {
         
       <div>
         <Zoom scale={1.4} 
-        duration={500}
+        duration={1500}
         transitionDuration={500}
         indicators={false}
+        pauseOnHover={false}
         autoplay={true}
         infinite={true}
         arrows={false}
