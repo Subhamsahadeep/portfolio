@@ -58,7 +58,7 @@
 }
 .about-me{
     background: #1a1a1a;
-    background: linear-gradient(45deg,#1a1a1a,#000000);
+    background: linear-gradient(to bottom, #000000, #1a1a1a);
     padding: 5% 5%;
     color: #fff;
 }
@@ -88,7 +88,7 @@
     }
 }
 .height-rkm-text{
-    height: 400px;
+    min-height: 340px;
 }
 .height-300px{
     height: 300px;

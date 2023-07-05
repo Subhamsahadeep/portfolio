@@ -4,22 +4,73 @@ $fa-font-path: "~font-awesome/fonts";
 @import "./margin-padding-width.scss";
 @import "./common.scss";
 @import "./portfolio.scss";
+@import "./new.scss";
 @import "./button-footer.scss";
 @import "aos/dist/aos.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+iframe{
+    pointer-events: none;
+}
 
 .container-section {
     scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
     overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+section:nth-child(odd){
+    background-color: #000000;
+}
+
+section:nth-child(even){
+    background-color: #1d1c1c;
+}
+
+
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
     height: 100vh;
 }
 
-section {
+
+.container-section-horizontal-scrollbar {
     display: flex;
-    justify-content:center;
-    align-items:center;
-    scroll-snap-align: start;
+    overflow: auto;
+    width: 100%;
+    height: auto;
+    flex-flow: row nowrap;
+    flex: none;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+
 }
 
+.container-section-horizontal-scrollbar section:nth-child(odd) {
+    background-color: #000000;
+    color: #d0d0d0;
+}
+
+.container-section-horizontal-scrollbar section:nth-child(even) {
+    background-color: #1d1c1c;
+    color: #ffffff;
+}
+
+
+.container-section-horizontal-scrollbar section {
+    text-align: center;
+    scroll-snap-align: center;
+    text-transform: uppercase;
+    flex: none;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    line-height: 128px;
+    font-size: 64px;
+    width: 60%;
+    height: 128px;
+}
