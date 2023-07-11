@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import { Image } from 'react-bootstrap';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import rkm from '../assets/rkm-1.png';
-import cbse from '../assets/cbse.jpg';
+import resume from '../documents/resume.pdf';
 import nita1 from '../assets/nit-cse.jpg';
 import nitalogo from '../assets/nita-logo.png';
 import bslogo from '../assets/bs.svg';
@@ -17,7 +17,6 @@ import nodejs from "../assets/node-js.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import scss from "../assets/scss.png";
-import resume from "../assets/resume.png";
 import bootstrap from "../assets/bootstrap.png";
 import ts from "../assets/ts.png";
 import gulp from "../assets/gulp.png";
@@ -115,12 +114,18 @@ class PortfolioComponent extends Component {
           </div>
         </Container>
          
-            <div className="wrapper-resume resume">
-              <div className="icon resume-fafa" onClick={() => this.openResume()}>
+        <a href={resume} download="resume" target='_blank'>
+        <div className="wrapper-resume resume">
+              <div className="icon resume-fafa">
+            
                 <div className="tooltip">Resume</div>
+             
+               
                 <span><i className="fa fa-file-pdf-o"></i></span>
               </div>
             </div>
+          </a>
+           
          
       </Jumbotron>
       </div>
