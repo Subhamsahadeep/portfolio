@@ -97,3 +97,60 @@
   background-color: #0077b5;
   color: #ffffff;
 }
+
+
+
+
+.wrapper-resume .icon {
+  position: relative;
+  background-color: #aeaeae;
+  color: #000000;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper-resume .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 10px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+
+.wrapper-resume .icon:hover .tooltip {
+  top: 55px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper-resume .icon:hover span,
+.wrapper-resume .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper-resume .resume-fafa:hover,
+.wrapper-resume .resume-fafa:hover .tooltip,
+.wrapper-resume .resume-fafa:hover .tooltip::before {
+  background-color: #fff;
+  color: #000;
+}

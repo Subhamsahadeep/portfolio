@@ -17,6 +17,7 @@ import nodejs from "../assets/node-js.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import scss from "../assets/scss.png";
+import resume from "../assets/resume.png";
 import bootstrap from "../assets/bootstrap.png";
 import ts from "../assets/ts.png";
 import gulp from "../assets/gulp.png";
@@ -29,6 +30,7 @@ import hackerrank from '../assets/hackerrank.jpeg';
 import udemy from '../assets/udemy.jpeg';
 import certificate from '../assets/certificate.png';
 import iitkgp from '../assets/iitkgp.png';
+import nextjs from '../assets/nextjs.png';
 import Aos from "aos";
 import Typical from 'react-typical';
 class PortfolioComponent extends Component {
@@ -43,6 +45,9 @@ class PortfolioComponent extends Component {
     Aos.init({ duration: 2000 });
   }
 
+  openResume(){
+    window.open('../documents/resume.pdf', 'Download');
+  }
   goToSumanSirWebsite() {
     window.open('https://sumandeb.com/', '_blank');
   }
@@ -51,7 +56,7 @@ class PortfolioComponent extends Component {
     window.open('mailto: subhamsahadeep@gmail.com', '_blank');
   }
   openBuildSupply(){
-    window.open('https://buildsupply.com/','_blank');
+    // window.open('https://buildsupply.com/','_blank');
   }
   openMedibuddy(){
     window.open('https://medibuddy.in/','_blank');
@@ -77,7 +82,7 @@ class PortfolioComponent extends Component {
 
   sectionHeader() {
     return (
-      <div className="main-jumbo-div">
+      <div className="main-jumbo-div position-relative">
       <Jumbotron fluid className="m-b-0">
         <Container>
           <div className="intro" data-aos="fade" data-aos-offset="200" data-aos-easing="ease-in-out-cubic" data-aos-duration="2000">
@@ -108,8 +113,15 @@ class PortfolioComponent extends Component {
               </div>
             </div>
           </div>
-
         </Container>
+         
+            <div className="wrapper-resume resume">
+              <div className="icon resume-fafa" onClick={() => this.openResume()}>
+                <div className="tooltip">Resume</div>
+                <span><i className="fa fa-file-pdf-o"></i></span>
+              </div>
+            </div>
+         
       </Jumbotron>
       </div>
     )
@@ -143,7 +155,7 @@ class PortfolioComponent extends Component {
     return (
       <div className="education">
         <div className="font-size-xxl bold uppercase width-100">
-          Education
+          ACADEMIA
         <div className="width-50 border-bottom-red p-b-3"></div>
         </div>
 
@@ -175,51 +187,6 @@ class PortfolioComponent extends Component {
               </div>
             </Col>
           </Row>
-          <Row className="p-b-20">
-            <Col md={1}></Col>
-            <Col sm={12} md={5}>
-              <div className="education-card m-10">
-                <div className="display-flex flex-wrap">
-                  <div className="logo-width margin-auto text-align-center">
-                    <Image src={cbse} className="p-10" />
-                  </div>
-                  <div className="logo-content-width margin-auto p-10">
-                    <div className="text-align-center font-size-sm">
-                      Central Board of Secondary Education
-                        </div>
-                    <div className="bold text-align-center font-size-smd">
-                      All India Secondary School Examination
-                        </div>
-                    <div className="bold text-align-center font-size-lg">
-                      95%
-                        </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-
-            <Col sm={12} md={5}>
-              <div className="education-card m-10" >
-                <div className="display-flex flex-wrap">
-                  <div className="logo-width margin-auto text-align-center">
-                    <Image src={cbse} className="p-10" />
-                  </div>
-                  <div className="logo-content-width margin-auto p-10">
-                    <div className="text-align-center font-size-sm">
-                      Central Board of Secondary Education
-                        </div>
-                    <div className="bold text-align-center font-size-smd">
-                      All India Senior School Certificate Examination
-                        </div>
-                    <div className="bold text-align-center font-size-lg">
-                      93%
-                        </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col md={1}></Col>
-          </Row>
         </Container>
 
         <Container className="p-t-20">
@@ -248,40 +215,7 @@ class PortfolioComponent extends Component {
               </div>
             </Col>
           </Row>
-          <Row className="p-b-20">
-            <Col md={3}></Col>
-            <Col sm={12} md={6}>
-              <div className="education-card m-10" >
-                <div className="display-flex flex-wrap">
-                  <div className="logo-width margin-auto text-align-center">
-                    <Image src={nitalogo} className="p-10" />
-                  </div>
-                  <div className="logo-content-width margin-auto p-10">
-                    <div className="text-align-center font-size-sm">
-                      National Institute of Technology Agartala
-                        </div>
-                    <div className="bold text-align-center font-size-smd">
-                      B.Tech in Computer Science and Engineering
-                  </div>
-                    <div className="bold text-align-center">
-                      <span className="font-size-sm p-r-10">
-                        CGPA:
-                    </span>
-                      <span className="font-size-lg">
-                        8.38/
-                    </span>
-                      <span className="font-size-sm">
-                        10
-                          </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col md={3}></Col>
-          </Row>
-
-        </Container>
+         </Container>
 
       </div>
     )
@@ -297,12 +231,32 @@ class PortfolioComponent extends Component {
         <Container className="p-t-50">
           <Row>
             <Col sm={12} md={6}>
-              <div className="main-education-card m-b-20 cursor-pointer" onClick={() => this.openBuildSupply()}>
+              <div className="main-education-card m-b-20 cursor-pointer" onClick={() => this.openMedibuddy()}>
+                <div className="education-card medibuddy-card">
+                  <div className="width-100 p-15 text-align-center">
+                    <Image src={mblogo} className="width-50"></Image>
+                   </div>
+                   <div className="gray-color text-center p-1">
+                      Software Development Engineer - II 
+                    </div>
+                </div>
+                <div className="p-20 text-align-center bold uppercase mb-text">
+                  July 2020 - Present
+                 
+              </div>
+              </div>
+
+            </Col>
+            <Col sm={12} md={6}>
+              <div className="main-education-card m-b-20" onClick={() => this.openBuildSupply()}>
                 <div className="education-card buildsupply-card p-0">
                   <div className="width-100 p-15 text-align-center">
                     <Image src={bslogo} className="width-50"></Image>
-                  </div>
+                    </div>
                   <div>
+                  <div className="gray-color text-center p-1">
+                      Analyst - Software Engineer
+                  </div>
 
                   </div>
                 </div>
@@ -311,19 +265,6 @@ class PortfolioComponent extends Component {
               </div>
               </div>
 
-
-            </Col>
-            <Col sm={12} md={6}>
-              <div className="main-education-card m-b-20 cursor-pointer" onClick={() => this.openMedibuddy()}>
-                <div className="education-card medibuddy-card">
-                  <div className="width-100 p-15 text-align-center">
-                    <Image src={mblogo} className="width-50"></Image>
-                  </div>
-                </div>
-                <div className="p-20 text-align-center bold uppercase mb-text">
-                  July 2020 - Present
-              </div>
-              </div>
 
             </Col>
           </Row>
@@ -346,6 +287,14 @@ class PortfolioComponent extends Component {
               </div>
               <div className="bold text-align-center">
                 REACT
+              </div>
+            </div>
+            <div className="skills-card">
+              <div className="width-100 p-15 text-align-center height-adjust-skill-card">
+                <Image src={nextjs} className="width-80"></Image>
+              </div>
+              <div className="bold text-align-center">
+                Next Js
               </div>
             </div>
             <div className="skills-card">
@@ -373,15 +322,24 @@ class PortfolioComponent extends Component {
               </div>
             </div>
 
+            <div className="skills-card">
+              <div className="width-100 p-15 text-align-center height-adjust-skill-card">
+                <Image src={ts} className="width-69"></Image>
+              </div>
+              <div className="bold text-align-center">
+                TypeScript
+              </div>
+            </div>
 
             <div className="skills-card">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={html} className="width-69"></Image>
+                <Image src={tailwind} className="width-80"></Image>
               </div>
               <div className="bold text-align-center">
-                HTML
+                Tailwind CSS
               </div>
             </div>
+
             <div className="skills-card">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={css} className="width-69"></Image>
@@ -409,24 +367,6 @@ class PortfolioComponent extends Component {
 
             <div className="skills-card">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={ts} className="width-69"></Image>
-              </div>
-              <div className="bold text-align-center">
-                TypeScript
-              </div>
-            </div>
-
-            <div className="skills-card">
-              <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={tailwind} className="width-80"></Image>
-              </div>
-              <div className="bold text-align-center">
-                Tailwind CSS
-              </div>
-            </div>
-
-            <div className="skills-card">
-              <div className="width-100 p-15 text-align-center height-adjust-skill-card">
                 <Image src={java} className="width-80"></Image>
               </div>
               <div className="bold text-align-center">
@@ -434,13 +374,12 @@ class PortfolioComponent extends Component {
               </div>
             </div>
 
-
             <div className="skills-card">
               <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={cplus} className="width-100 p-t-10 "></Image>
+                <Image src={html} className="width-69"></Image>
               </div>
               <div className="bold text-align-center">
-                C++
+                HTML
               </div>
             </div>
           </div>
@@ -659,33 +598,6 @@ class PortfolioComponent extends Component {
             </div>
             <div className="uppercase font-size-sm p-t-10">
               <a target="_blank" href="https://drive.google.com/file/d/1qQJiVZlT24nYq7O_AmwEtGUpvxU5pQCT/view?usp=sharing">See Certification</a>
-            </div>
-          </div>
-          <div className="width-20 text-align-right">
-            <div className="width-100">
-              <Image className="certificate-logo" src={certificate}></Image>
-            </div>
-            <div className="uppercase font-size-sm">
-            </div>
-          </div>
-        </div>
-
-        <div className="certifaction-card display-flex flex-wrap m-15" >
-          <div className="width-10">
-            <Image src={udemy} className="width-100"></Image>
-          </div>
-          <div className="width-70 p-20">
-            <div className="bold font-size-md">
-              Building Database Web App using PHP, OOP, PDO, AJAX and MySQL
-            </div>
-            <div className="font-size-md">
-              Udemy
-            </div>
-            <div className="bold font-size-smd uppercase">
-              September 2018
-            </div>
-            <div className="uppercase font-size-sm p-t-10">
-              <a target="_blank" href="https://drive.google.com/file/d/12IeFXYDQA2QrBgtY1QFUOnxAuSkr3a5k/view?usp=sharing">See Certification</a>
             </div>
           </div>
           <div className="width-20 text-align-right">

@@ -696,6 +696,7 @@ class PortfolioNewComponent extends Component {
         {this.sectionPublications()}
         {this.sectionCertifications()}
         {this.sectionFooter()} */}
+      
         <div className="container-section">
           <section>
             {this.sectionHeader()}

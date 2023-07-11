@@ -179,3 +179,29 @@
 .height-rkm-nita{
     min-height: 250px;
 }
+
+.container-section-video{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+.container-section-video > .bg-video {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* background-color and color should be the same as the below otherwise it won't work */
+  .container-section-video > .text {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background-color: #000;
+    color: #fff;
+    font-weight: 900;
+    font-size: 100px;
+    font-family: sans-serif;
+    /* Mix Blend Mode does the all magic */
+    mix-blend-mode: multiply;
+    user-select: none;
+  }

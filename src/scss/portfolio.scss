@@ -2,16 +2,50 @@
     background-image: url("../assets/subham-link-background4.webp");
     background-size: cover;
     padding: 10em 3em;
-    color: #fff;
   }
-  .skills-card:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
+.resume{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 999999;
+    color: #d0d0d0;
+    cursor: pointer;
+    // animation: resume-animate 4s infinite ease-in-out;
+}
+
+
+@keyframes resume-animate {
+    0%{
+        background-color: #ff8080;
+        color: #000;
+        border: 1px solid #d0d0d0;
+    }
+    50%{
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000000;
+    }
+    100%{
+        background-color:#ff8080;
+        color: #000;
+        border: 1px solid #d0d0d0;
+    }
+}
+
+
 .name{
     font-size: 50px;
     font-weight: 900;
     font-family: revert;
-  }
+   }
+@keyframes nameanimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
 .location{
     font-size: 30px;
     font-weight: 900;
