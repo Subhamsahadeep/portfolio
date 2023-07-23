@@ -44,7 +44,7 @@ class PortfolioComponent extends Component {
     Aos.init({ duration: 2000 });
   }
 
-  openResume(){
+  openResume() {
     window.open('../documents/resume.pdf', 'Download');
   }
   goToSumanSirWebsite() {
@@ -54,11 +54,11 @@ class PortfolioComponent extends Component {
   openEmail() {
     window.open('mailto: subhamsahadeep@gmail.com', '_blank');
   }
-  openBuildSupply(){
+  openBuildSupply() {
     // window.open('https://buildsupply.com/','_blank');
   }
-  openMedibuddy(){
-    window.open('https://medibuddy.in/','_blank');
+  openMedibuddy() {
+    window.open('https://medibuddy.in/', '_blank');
   }
   openFB() {
     window.open('https://www.facebook.com/subhamsahadeep/', '_blank');
@@ -82,52 +82,52 @@ class PortfolioComponent extends Component {
   sectionHeader() {
     return (
       <div className="main-jumbo-div position-relative">
-      <Jumbotron fluid className="m-b-0">
-        <Container>
-          <div className="intro" data-aos="fade" data-aos-offset="200" data-aos-easing="ease-in-out-cubic" data-aos-duration="2000">
-            <div className="uppercase slim"> Thank you for visiting </div>
-            <div className="name">
-              Hi, I'm <span> SUBHAM SAHA</span>
-            </div>
-            <div className="location p-t-10">
-              <div className="dynamic-texts">
-                <Typical
-                  steps={[
-                    'Javascript', 
-                    2000, 
-                    'React', 
-                    2000, 
-                    'Node Js', 
-                    2000,
-                    'Angular',
-                    2000,
-                  ]}
-                  loop={Infinity}
-                  wrapper="div"
-                  className="typing-custom lowercase"
-                />
-                <div className="font-size-sm p-t-10 uppercase">
-                  developer
+        <Jumbotron fluid className="m-b-0">
+          <Container>
+            <div className="intro" data-aos="fade" data-aos-offset="200" data-aos-easing="ease-in-out-cubic" data-aos-duration="2000">
+              <div className="uppercase slim"> Thank you for visiting </div>
+              <div className="name">
+                Hi, I'm <span> SUBHAM SAHA</span>
+              </div>
+              <div className="location p-t-10">
+                <div className="dynamic-texts">
+                  <Typical
+                    steps={[
+                      'Javascript',
+                      2000,
+                      'React',
+                      2000,
+                      'Node Js',
+                      2000,
+                      'Angular',
+                      2000,
+                    ]}
+                    loop={Infinity}
+                    wrapper="div"
+                    className="typing-custom lowercase"
+                  />
+                  <div className="font-size-sm p-t-10 uppercase">
+                    developer
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </Container>
-         
-        <a href={resume} download="resume" target='_blank'>
-        <div className="wrapper-resume resume">
+          </Container>
+
+          <a href={resume} download="resume" target='_blank'>
+            <div className="wrapper-resume resume">
               <div className="icon resume-fafa">
-            
+
                 <div className="tooltip">Resume</div>
-             
-               
+
+
                 <span><i className="fa fa-file-pdf-o"></i></span>
               </div>
             </div>
           </a>
-           
-         
-      </Jumbotron>
+
+
+        </Jumbotron>
       </div>
     )
   }
@@ -141,12 +141,12 @@ class PortfolioComponent extends Component {
         </div>
         <div>
           <div className="responsive-text p-10 text-align-justify color-very-light-grey">
-          I'm a Software Development Engineer 2 and a Full Stack Web Developer with 4 years of experience. I have a proven track record of developing innovative and user-friendly web applications, with over 7 customer-facing products that have gained a user base from all over India. <br></br>
+            I'm a Software Development Engineer 2 and a Full Stack Web Developer with 4 years of experience. I have a proven track record of developing innovative and user-friendly web applications, with over 7 customer-facing products that have gained a user base from all over India. <br></br>
 
-Working in a startup culture from the beginning has provided me with valuable experience in all aspects of web development, including design, development, testing, and deployment. I have a deep understanding of user experience and design principles, which allows me to create interfaces that are visually appealing and intuitive.  <br></br>
+            Working in a startup culture from the beginning has provided me with valuable experience in all aspects of web development, including design, development, testing, and deployment. I have a deep understanding of user experience and design principles, which allows me to create interfaces that are visually appealing and intuitive.  <br></br>
 
-Overall, I'm a dedicated developer who is passionate about delivering exceptional results. My strong problem-solving skills and ability to learn and adapt quickly to new technologies and programming languages have been instrumental in delivering quality products that meet the needs of clients and users.
-        </div>
+            Overall, I'm a dedicated developer who is passionate about delivering exceptional results. My strong problem-solving skills and ability to learn and adapt quickly to new technologies and programming languages have been instrumental in delivering quality products that meet the needs of clients and users.
+          </div>
         </div>
       </div>
     )
@@ -157,7 +157,7 @@ Overall, I'm a dedicated developer who is passionate about delivering exceptiona
       <div className="education">
         <div className="font-size-xxl bold uppercase width-100">
           ACADEMIA
-        <div className="width-50 border-bottom-red p-b-3"></div>
+          <div className="width-50 border-bottom-red p-b-3"></div>
         </div>
 
         <Container className="p-t-20">
@@ -177,13 +177,13 @@ Overall, I'm a dedicated developer who is passionate about delivering exceptiona
                       Ramakrishna Mission Vidyalaya
                     </a>
                   </span> bears the sacred name of Sri Ramakrishna
-                and is run by the esteemed organization Ramakrishna Mission,
-                Belur Math, which was founded by Swami Vivekananda himself with the objective
-                - "one’s own salvation and for the welfare of the world". Vivekananda’s concept
-                of ‘Man making and character building education’ is our guiding light. In Tripura
-                our Vidyalaya has been carrying a uniform track record of quality education with high
-                moral values for twenty five years.
-            </div>
+                  and is run by the esteemed organization Ramakrishna Mission,
+                  Belur Math, which was founded by Swami Vivekananda himself with the objective
+                  - "one’s own salvation and for the welfare of the world". Vivekananda’s concept
+                  of ‘Man making and character building education’ is our guiding light. In Tripura
+                  our Vidyalaya has been carrying a uniform track record of quality education with high
+                  moral values for twenty five years.
+                </div>
 
               </div>
             </Col>
@@ -194,8 +194,8 @@ Overall, I'm a dedicated developer who is passionate about delivering exceptiona
           <Row className="p-b-20">
             <Col sm={12} md={6}>
               <div>
-              <div className="education-image-div p-10">
-                <Image src={nita1} className="width-100 image-border-shadow" />
+                <div className="education-image-div p-10">
+                  <Image src={nita1} className="width-100 image-border-shadow" />
                 </div>
               </div>
             </Col>
@@ -205,18 +205,18 @@ Overall, I'm a dedicated developer who is passionate about delivering exceptiona
                   <span className="bold">
                     <a target="_blank" href="https://www.nita.ac.in/">
                       National Institute of Technology Agartala (NIT Agartala or NITA)
-                  </a>
+                    </a>
                   </span> is a technology-oriented institute of higher education
-                established by India's Ministry of Human Resource Development Government of
-                India in Agartala, India. It was founded as Tripura Engineering College in
-                1965 and declared a National Institute of Technology (NIT) in 2006, thus being
-                recognized as an Institute of National Importance.
-            </div>
+                  established by India's Ministry of Human Resource Development Government of
+                  India in Agartala, India. It was founded as Tripura Engineering College in
+                  1965 and declared a National Institute of Technology (NIT) in 2006, thus being
+                  recognized as an Institute of National Importance.
+                </div>
 
               </div>
             </Col>
           </Row>
-         </Container>
+        </Container>
 
       </div>
     )
@@ -228,7 +228,7 @@ Overall, I'm a dedicated developer who is passionate about delivering exceptiona
         <div className="work-experience-text">
           {/* EXPERIENCE */}
           I am proud to be associated with these amazing companies
-      </div>
+        </div>
         <Container className="p-t-50">
           <Row>
             <Col sm={12} md={6}>
@@ -236,15 +236,15 @@ Overall, I'm a dedicated developer who is passionate about delivering exceptiona
                 <div className="education-card medibuddy-card">
                   <div className="width-100 p-15 text-align-center">
                     <Image src={mblogo} className="width-50"></Image>
-                   </div>
-                   <div className="gray-color text-center p-1">
-                      Software Development Engineer - II 
-                    </div>
+                  </div>
+                  <div className="gray-color text-center p-1">
+                    Software Development Engineer - II
+                  </div>
                 </div>
                 <div className="p-20 text-align-center bold uppercase mb-text">
                   July 2020 - Present
-                 
-              </div>
+
+                </div>
               </div>
 
             </Col>
@@ -253,17 +253,17 @@ Overall, I'm a dedicated developer who is passionate about delivering exceptiona
                 <div className="education-card buildsupply-card p-0">
                   <div className="width-100 p-15 text-align-center">
                     <Image src={bslogo} className="width-50"></Image>
-                    </div>
-                  <div>
-                  <div className="gray-color text-center p-1">
-                      Analyst - Software Engineer
                   </div>
+                  <div>
+                    <div className="gray-color text-center p-1">
+                      Analyst - Software Engineer
+                    </div>
 
                   </div>
                 </div>
                 <div className="p-20 text-align-center bold uppercase bs-text">
                   June 2019 - June 2020
-              </div>
+                </div>
               </div>
 
 
@@ -404,10 +404,10 @@ Overall, I'm a dedicated developer who is passionate about delivering exceptiona
                   <div className="width-75">
                     <div className="bold font-size-md">
                       Designing a Mobile based Non-Verbal Classroom Interaction System
-                  </div>
+                    </div>
                     <div className="font-size-sm">
                       Mar 28, 2019 - SSRN
-                  </div>
+                    </div>
                     <div className="font-size-sm uppercase p-t-10 p-b-10">
                       <a target="_blank" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3361038">See Publication</a>
                     </div>
@@ -415,13 +415,13 @@ Overall, I'm a dedicated developer who is passionate about delivering exceptiona
                   <div className="width-25 text-align-right">
                     <div className="bold font-size-sm">
                       Authors
-                      </div>
+                    </div>
                     <div className="font-size-smd">
                       Subham Saha
-                      </div>
+                    </div>
                     <div className="font-size-smd suman-sir" onClick={() => this.goToSumanSirWebsite()}>
                       Suman Deb
-                      </div>
+                    </div>
                   </div>
 
                 </div>
@@ -451,7 +451,7 @@ Overall, I'm a dedicated developer who is passionate about delivering exceptiona
                     marker based and nonverbal response collection system. We tried to explore different
                     possibilities of quick markers as a mobile supported interactive classroom design with
                     a formative interaction for a teacher to get an insight into learners’ activity.
-                </div>
+                  </div>
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
@@ -463,10 +463,10 @@ Overall, I'm a dedicated developer who is passionate about delivering exceptiona
                   <div className="width-75">
                     <div className="bold font-size-md">
                       BYOD Supported Multimodal Classroom Interaction
-                  </div>
+                    </div>
                     <div className="font-size-sm">
                       Apr 17, 2020 - Elsevier
-                  </div>
+                    </div>
                     <div className="font-size-sm uppercase p-t-10 p-b-10">
                       <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S1877050920308309?via%3Dihub">See Publication</a>
                     </div>
@@ -474,13 +474,13 @@ Overall, I'm a dedicated developer who is passionate about delivering exceptiona
                   <div className="width-25 text-align-right">
                     <div className="bold font-size-sm">
                       Authors
-                      </div>
+                    </div>
                     <div className="font-size-smd">
                       Subham Saha
-                      </div>
+                    </div>
                     <div className="font-size-smd suman-sir" onClick={() => this.goToSumanSirWebsite()}>
                       Suman Deb
-                      </div>
+                    </div>
                   </div>
 
                 </div>
@@ -511,7 +511,7 @@ Overall, I'm a dedicated developer who is passionate about delivering exceptiona
                     to increase the pleasure level of students, by allowing them to participate in an active
                     formative class room interaction and the classroom can be extended as an augmented layer
                     for teacher to have an insight in to an individual students.
-                 </div>
+                  </div>
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
