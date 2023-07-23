@@ -141,15 +141,11 @@ class PortfolioComponent extends Component {
         </div>
         <div>
           <div className="responsive-text p-10 text-align-justify color-very-light-grey">
-            I am a full-stack Web Application Developer and Software Developer,
-            currently living in Bengaluru, India. I am having 2+ years of experience. Apart from that, I
-            have a Bachelor of Technology in Computer Science and Engineering from NIT Agartala, India.
-            My primary focus and inspiration for my studies is Software Development and building great
-            products to solve the real life problems of people. In my free time, I study human computer
-            interface, the psychology of human computer interaction and also research about the advancement
-            of technologies in automating any manual task in multiple fields. I am both driven and self-motivated,
-            and I am constantly experimenting with new technologies and techniques. I am very passionate about Web
-            Development, and strive to better myself as a developer, and the development community as a whole.
+          I'm a Software Development Engineer 2 and a Full Stack Web Developer with 4 years of experience. I have a proven track record of developing innovative and user-friendly web applications, with over 7 customer-facing products that have gained a user base from all over India. <br></br>
+
+Working in a startup culture from the beginning has provided me with valuable experience in all aspects of web development, including design, development, testing, and deployment. I have a deep understanding of user experience and design principles, which allows me to create interfaces that are visually appealing and intuitive.  <br></br>
+
+Overall, I'm a dedicated developer who is passionate about delivering exceptional results. My strong problem-solving skills and ability to learn and adapt quickly to new technologies and programming languages have been instrumental in delivering quality products that meet the needs of clients and users.
         </div>
         </div>
       </div>
