@@ -70,7 +70,7 @@ class PortfolioComponent extends Component {
     window.open('https://github.com/Subhamsahadeep', '_blank');
   }
   openLinkedIn() {
-    window.open('https://www.linkedin.com/in/subham-saha-336170119/', '_blank');
+    window.open('https://www.linkedin.com/in/subhamsahadeep', '_blank');
   }
   openInsta() {
     window.open('https://www.instagram.com/behighforever/', '_blank');
