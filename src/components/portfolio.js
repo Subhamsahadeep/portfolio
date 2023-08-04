@@ -623,20 +623,6 @@ class PortfolioComponent extends Component {
         </div>
         <div className="text-align-center m-t-30" data-aos="fade">
           <div className="wrapper">
-            <div className="icon facebook" onClick={() => this.openFB()}>
-              <div className="tooltip">Facebook</div>
-              <span><i className="fa fa-facebook-f"></i></span>
-            </div>
-            <div className="icon whatsapp" onClick={() => this.openWhatsapp()}>
-              <div className="tooltip">Whatsapp</div>
-              <span>
-                <i className="fa fa-whatsapp"></i>
-              </span>
-            </div>
-            <div className="icon instagram" onClick={() => this.openInsta()}>
-              <div className="tooltip">Instagram</div>
-              <span><i className="fa fa-instagram"></i></span>
-            </div>
             <div className="icon github" onClick={() => this.openGithub()}>
               <div className="tooltip">Github</div>
               <span><i className="fa fa-github"></i></span>
