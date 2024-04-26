@@ -13,6 +13,29 @@
     // animation: resume-animate 4s infinite ease-in-out;
 }
 
+.bg-linear-black{
+    background-image: linear-gradient(to bottom, transparent 10%, black 90%);
+    background-size: cover;
+    background-position: center;
+    padding: 35px 10px 10px 10px;
+}
+.name-anchor{
+    color: white;
+    text-decoration: underline;
+}
+.name-anchor:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.academia-main{
+    background: #fafafa;
+    padding: 2px 2px;
+    border-radius: 2px;
+    margin: 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
 
 @keyframes resume-animate {
     0%{
@@ -53,19 +76,17 @@
 }
 .education-image-div{
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 450px;
 }
-.education-image-div::before{
-    content: "";
-    position: absolute;
-    top: 0%;
-    border: 3px solid #8ea7c9;
-    z-index: -1;
-    left: 0%;
-    width: 96%;
-    height: 94%;
-    border-radius: 5px;
-    box-shadow: 0 8px 22px -8px #000000;
-   
+.bg-rkm{
+    background-image: url("../assets/rkm-1.png");
+}
+.bg-nita{
+    background-image: url("../assets/nit-cse.jpg");
 }
 
 
@@ -176,6 +197,12 @@
     background: linear-gradient(
         45deg
         , #ffffff 83%, #f4000b 10%);
+    border-radius: 10px;
+  }
+  .travelopia-card{
+    background: linear-gradient(
+        45deg
+        , #ffffff 83%, #1a5574 10%);
     border-radius: 10px;
   }
   .main-education-card{
@@ -565,10 +592,5 @@
     text-shadow : 1px 1px 20px #00ffdf
 }
 .image-border-shadow{
-    // background: #edededf7;
-    // padding: 2px;
-    // box-shadow: 0 8px 6px -6px black;
     border-radius: 2px;
 }
-
-

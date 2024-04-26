@@ -7,6 +7,9 @@ $orange-color :#FFA500;
 $light-orange-color : #ffa86b;
 $deep-pink-color : #FF6347;
 
+.color-white{
+    color: white
+}
 .position-absolute{
     position: absolute;
 }   
@@ -16,6 +19,9 @@ $deep-pink-color : #FF6347;
 .position-fixed{
     position: fixed;
 }   
+.bottom-0{
+    bottom: 0;
+}
 .z-index-999{
     z-index: 999;
 }
