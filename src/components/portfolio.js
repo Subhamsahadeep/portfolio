@@ -236,7 +236,7 @@ class PortfolioComponent extends Component {
               >
                 <div className="education-card travelopia-card">
                   <div className="width-100 m-auto pt-2 text-align-center">
-                    <Image src={travelopia} className="width-30"></Image>
+                    <Image src={travelopia} className="brand-logo"></Image>
                   </div>
                   <div className="gray-color font-size-smd text-center p-1 bold">
                     Product Engineer
@@ -280,7 +280,7 @@ class PortfolioComponent extends Component {
               >
                 <div className="education-card medibuddy-card">
                   <div className="width-100 m-auto p-15 text-align-center">
-                    <Image src={mblogo} className="width-30"></Image>
+                    <Image src={mblogo} className="brand-logo"></Image>
                   </div>
                   <div className="gray-color font-size-smd text-center p-1 bold">
                     Software Development Engineer - II
@@ -339,7 +339,7 @@ class PortfolioComponent extends Component {
               >
                 <div className="education-card buildsupply-card p-0">
                   <div className="width-100 p-15 text-align-center">
-                    <Image src={bslogo} className="width-30"></Image>
+                    <Image src={bslogo} className="brand-logo"></Image>
                   </div>
                   <div>
                     <div className="gray-color text-center p-1 bold">

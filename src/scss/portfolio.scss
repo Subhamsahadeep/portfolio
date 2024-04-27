@@ -195,10 +195,13 @@
         45deg
         , #ffffff 93%, #FF8008 7%);
     border-radius: 10px;
+  };
+  .brand-logo{
+    width: 20%
   }
 
   .medibuddy-card{
-    background: linear-gradient(45deg, #ffffff 95%, #f4000b 5%);
+    background: linear-gradient(45deg, #ffffff 97%, #f4000b 3%);
     border-radius: 10px;
   }
   .travelopia-card{
@@ -268,6 +271,9 @@
     width: 100%;
 }
 @media only screen and (max-width: 428px) {
+    .brand-logo{
+        width: 45%
+      }
     .skills-card{
         width: 45%;
         padding: 20px;
