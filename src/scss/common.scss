@@ -7,6 +7,17 @@ $orange-color :#FFA500;
 $light-orange-color : #ffa86b;
 $deep-pink-color : #FF6347;
 
+@font-face {
+    font-family: 'iA Writer Quattro';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-quattro@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-quattro@latest/latin-400-normal.woff) format('woff');
+  }
+
+body{
+   font-family: 'iA Writer Quattro';
+}
 .color-white{
     color: white
 }
@@ -181,9 +192,7 @@ hr.style-straight {
     background: #333;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
-.font-family-default{
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-}
+
 .badge-custom{
     border : 1px solid $base-color;
     border-radius: 15px;

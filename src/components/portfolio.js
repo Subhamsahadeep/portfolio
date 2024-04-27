@@ -114,9 +114,9 @@ class PortfolioComponent extends Component {
                     steps={[
                       "Javascript",
                       2000,
-                      "React",
+                      "React js",
                       2000,
-                      "Next",
+                      "Next js",
                       2000,
                       "Node Js",
                       2000,
