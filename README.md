@@ -1,13 +1,13 @@
-## Portfolio - Subham Saha
+# Portfolio - Subham Saha
 
-# Installation and Running the APP Guide
+## Installation and Running the APP Guide
 ``` bash
 nvm use v16.14.0
 npm i
 npm run start
 ```
 
-# Details APP Holds
+## Details Available
 - About me
 - Education
 - Experiences explained in detail
