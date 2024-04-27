@@ -5,14 +5,11 @@ import Col from "react-bootstrap/Col";
 import { Image } from "react-bootstrap";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import resume from "../documents/resume.pdf";
-import nitalogo from "../assets/nita-logo.png";
 import bslogo from "../assets/bs.svg";
 import mblogo from "../assets/mb.svg";
 import travelopia from "../assets/travelopia.png";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
-import hackerrank from "../assets/hackerrank.jpeg";
-import certificate from "../assets/certificate.png";
 import iitkgp from "../assets/iitkgp.png";
 import Aos from "aos";
 import Typical from "react-typical";
@@ -332,11 +329,7 @@ class PortfolioComponent extends Component {
               </div>
             </Col>
             <Col sm={12} md={{ span: 8, offset: 2 }}>
-              <div
-                className="main-education-card m-b-20"
-                data-aos="zoom-in"
-                onClick={() => this.openBuildSupply()}
-              >
+              <div className="main-education-card m-b-20" data-aos="zoom-in">
                 <div className="education-card buildsupply-card p-0">
                   <div className="width-100 p-15 text-align-center">
                     <Image src={bslogo} className="brand-logo"></Image>
@@ -363,7 +356,7 @@ class PortfolioComponent extends Component {
             </Col>
             <Col sm={12} md={{ span: 8, offset: 2 }}>
               <div
-                className="main-education-card m-b-20"
+                className="main-education-card m-b-20 cursor-pointer"
                 data-aos="zoom-in"
                 onClick={() => this.openIIT()}
               >
@@ -558,102 +551,6 @@ class PortfolioComponent extends Component {
     );
   }
 
-  sectionCertifications() {
-    return (
-      <div className="publications">
-        <div className="font-size-xxl bold uppercase width-100">
-          Internships and Certifications
-          <div className="width-50 border-bottom-red p-b-3"></div>
-        </div>
-        <div className="certifaction-card display-flex flex-wrap m-15">
-          <div className="width-10">
-            <Image src={hackerrank} className="width-100"></Image>
-          </div>
-          <div className="width-70 p-20">
-            <div className="bold font-size-md">Problem Solving</div>
-            <div className="font-size-md">HackerRank</div>
-            <div className="bold font-size-smd uppercase">September 2020</div>
-            <div className="uppercase font-size-sm p-t-10">
-              <a
-                target="_blank"
-                href="https://www.hackerrank.com/certificates/2cf22acfe952"
-              >
-                See Certification
-              </a>
-            </div>
-          </div>
-          <div className="width-20 text-align-right">
-            <div className="width-100">
-              <Image className="certificate-logo" src={certificate}></Image>
-            </div>
-            <div className="uppercase font-size-sm"></div>
-          </div>
-        </div>
-
-        <div className="certifaction-card display-flex flex-wrap m-15">
-          <div className="width-10">
-            <Image src={iitkgp} className="width-100"></Image>
-          </div>
-          <div className="width-70 p-20">
-            <div className="bold font-size-md">
-              Essential Drug Information System
-            </div>
-            <div className="font-size-md">
-              Indian Institute of Technology, Kharagpur
-            </div>
-            <div className="bold font-size-smd uppercase">
-              May 2018 - June 2018 ( Summer Intern )
-            </div>
-
-            <div className="uppercase font-size-sm p-t-10">
-              <a
-                target="_blank"
-                href="https://drive.google.com/file/d/1I4kma-Crd9wJwLkbWeBITAyByFBEQyA9/view?usp=sharing"
-              >
-                See Certification
-              </a>
-            </div>
-          </div>
-          <div className="width-20 text-align-right">
-            <div className="width-100">
-              <Image className="certificate-logo" src={certificate}></Image>
-            </div>
-            <div className="uppercase font-size-sm"></div>
-          </div>
-        </div>
-
-        <div className="certifaction-card display-flex flex-wrap m-15">
-          <div className="width-10">
-            <Image src={nitalogo} className="width-100"></Image>
-          </div>
-          <div className="width-70 p-20">
-            <div className="bold font-size-md">
-              Designing an Optical Response Based Rapid Classroom Interaction
-            </div>
-            <div className="font-size-md">
-              National Institute of Technology Agartala
-            </div>
-            <div className="bold font-size-smd uppercase">December 2018</div>
-            <div className="uppercase font-size-sm p-t-10">
-              <a
-                target="_blank"
-                href="https://drive.google.com/file/d/1qQJiVZlT24nYq7O_AmwEtGUpvxU5pQCT/view?usp=sharing"
-              >
-                See Certification
-              </a>
-            </div>
-          </div>
-          <div className="width-20 text-align-right">
-            <div className="width-100">
-              <Image className="certificate-logo" src={certificate}></Image>
-            </div>
-            <div className="uppercase font-size-sm"></div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   sectionFooter() {
     return (
       <div className="contact-card">
@@ -713,7 +610,6 @@ class PortfolioComponent extends Component {
         {this.sectionEducation()}
         {this.sectionExperience()}
         {this.sectionPublications()}
-        {/* {this.sectionCertifications()} */}
         {this.sectionFooter()}
       </>
     );
