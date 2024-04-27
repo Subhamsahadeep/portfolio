@@ -2,7 +2,12 @@
     background-image: url("../assets/subham-link-background4.webp");
     background-size: cover;
     padding: 10em 3em;
-  }
+}
+.exp-items{
+    color:gray;
+    font-size: 15px;
+    padding: 5px;
+}
 .resume{
     position: fixed;
     top: 5px;
@@ -153,6 +158,7 @@
     // background: linear-gradient(90deg, #ffffff, #f0f0f0);
     background: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ 
 }
 
 .experience{
@@ -189,41 +195,58 @@
   .buildsupply-card{
     background: linear-gradient(
         45deg
-        , #ffffff 83%, #FF8008 10%);
+        , #ffffff 93%, #FF8008 7%);
     border-radius: 10px;
   }
 
   .medibuddy-card{
     background: linear-gradient(
         45deg
-        , #ffffff 83%, #f4000b 10%);
+        , #ffffff 93%, #f4000b 7%);
     border-radius: 10px;
   }
   .travelopia-card{
     background: linear-gradient(
         45deg
-        , #ffffff 83%, #1a5574 10%);
+        , #ffffff 93%, #1a5574 7%);
     border-radius: 10px;
   }
+  .iit-card{
+    background: linear-gradient(
+        45deg
+        , #ffffff 93%, #291973 7%);
+    border-radius: 10px;
+  }
+  
   .main-education-card{
       border-radius: 10px;
-    //   background: linear-gradient(0deg,transparent, #eaeaea 74%);
-    //   background: linear-gradient(0deg,transparent, #ffffff 90%);
   }
 
   .bs-text{
-       font-size: 20px;
+    font-size: 15px;
         background: -webkit-linear-gradient(45deg,#FF8008, #0f3c55);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
   }
-
   .mb-text{
-    font-size: 20px;
-     background: -webkit-linear-gradient(45deg, #1978f2, #f4000b);
+     font-size: 15px;
+     background: -webkit-linear-gradient(right, #1978f2, #f4000b);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
 }
+.travelopia-text{
+    font-size: 15px;
+    background: -webkit-linear-gradient(45deg, #307ea5, #1a5574);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.iit-text{
+    font-size: 15px;
+    background: -webkit-linear-gradient(45deg, #291973, #090320);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 .publications{
     background: #ffffff;

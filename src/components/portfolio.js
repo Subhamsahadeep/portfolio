@@ -9,23 +9,11 @@ import nitalogo from "../assets/nita-logo.png";
 import bslogo from "../assets/bs.svg";
 import mblogo from "../assets/mb.svg";
 import travelopia from "../assets/travelopia.png";
-import react from "../assets/react-js.png";
-import angular from "../assets/angular.png";
-import js from "../assets/js.png";
-import nodejs from "../assets/node-js.png";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import scss from "../assets/scss.png";
-import bootstrap from "../assets/bootstrap.png";
-import ts from "../assets/ts.png";
-import tailwind from "../assets/tailwind.png";
-import java from "../assets/java.png";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import hackerrank from "../assets/hackerrank.jpeg";
 import certificate from "../assets/certificate.png";
 import iitkgp from "../assets/iitkgp.png";
-import nextjs from "../assets/nextjs.png";
 import Aos from "aos";
 import Typical from "react-typical";
 class PortfolioComponent extends Component {
@@ -34,10 +22,38 @@ class PortfolioComponent extends Component {
     console.log(this.props);
     this.state = {
       name: "Subham Saha",
+      travelopiaEx: [
+        "Developed the ’myTCS’ and ’FourSeasons’ platform’s front-end (post reservation) ensuring consistent component structure across diverse brand themes using semantic tokens and extendTheme by Chakra UI. Enhanced platform capabilities significantly by seamlessly integrating static data fetching from a CMS tool (Sanity).",
+        "Developing custom React components with individualized designs using Chakra UI’s defineStyle and semantics to maintain a similar user experience for all themes. Utilizing Storybook for thorough component testing.",
+        "Batching HTTP requests with TRPC and Zod types ensures type safety and boosts reusability. AWS Step Functions synchronize payment flow processes, invoking lambda functions at each step.",
+        "Improved app performance from 10 seconds to 500 milliseconds with a cache layer, enhancing user experience. Leveraged SQS for faster write operations and asynchronous data syncing, optimizing performance further.",
+      ],
+      mbEx2: [
+        "Improving Medibuddy’s Core Vitals [ LCP , TBT ] ( Accessibility Score 65 to 80 and SEO Score 75 to 92 )",
+        "Implemented Automated Dialler for Insurance business segment. This development helped to minimise manual calling to customers and more conversion of calls. [ Integrations with Kaleyra and Ameyo ]",
+        "Real-time syncing of all the case data for different insurers - Internal tool developed for Analytics. ( receiving 70K requests on an average )",
+        "Developed an internal Pdf tool that includes Splitting, Swapping, Rearranging, and Merging any kind of Pdfs.",
+        "Migration of React Class Components to Functional Components and also to Next JS ( SSR ) and also revamping of complete UI for online-consultations app and other internal tools.",
+        "End to end development of Phlebo APP ( Front-End ) which is used by all the Phlebotomists. It has features like login, order dashboard, camera features, bar-code scanner, etc.",
+        "End to end development of Provider/Insurer Portal ( Front-End ) for all the providers and insurers to track each and every case detail and to handle daily tasks. Features: Different dashboards based on user roles, dynamic Routing, etc.",
+        "Mentored a team of developers who were working on Front-End Offline Consults.",
+      ],
+      mbEx1: [
+        "Development of Medibuddy Gold Page.",
+        "Ownership of Medibuddy's Internal Tool Procheck for maintaining journey of any pre-policy cases.",
+        "Generation of Digital Medical Examination Report ( DigiMER ) for all the insurers ( B2B ) and making sure the reports are generated according to their report standards which holds the details of the conversion between Doctors and Patients.",
+        "Doctor Consultation Dashboard where the doctor can ask respective questions to the patients ( the questions are dynamic as those questions are different for each insurers )",
+      ],
+      bsEx: [
+        "Designed and developed the Material Manager, an end-to-end construction-focused inventory management solution using Angular. This platform enables customers to efficiently manage project procurement and provides real-time tracking of material inventory across multiple projects. - 1000+ Cases Handing daily.",
+      ],
+      iitEx: [
+        "Essential Drug Information System - Developed a comprehensive doctor dashboard with a medicine search engine for seamless prescription, including the ability to add new medicines to the database.",
+      ],
     };
   }
   componentDidMount() {
-    Aos.init({ duration: 2000, once: true });
+    Aos.init({ duration: 1000, once: true });
   }
 
   openResume() {
@@ -50,8 +66,8 @@ class PortfolioComponent extends Component {
   openEmail() {
     window.open("mailto: subhamsahadeep@gmail.com", "_blank");
   }
-  openBuildSupply() {
-    // window.open('https://buildsupply.com/','_blank');
+  openIIT() {
+    window.open("https://www.iitkgp.ac.in/", "_blank");
   }
   openNita() {
     window.open("https://www.nita.ac.in/", "_blank");
@@ -180,18 +196,8 @@ class PortfolioComponent extends Component {
                   className="education-image-div bg-rkm cursor-pointer"
                   onClick={() => this.openRkm()}
                 >
-                  <div className="position-absolute bottom-0 color-white bold bg-linear-black font-size-md">
-                    <span className="bold name-anchor">
-                      Ramakrishna Mission Vidyalaya
-                    </span>{" "}
-                    bears the sacred name of Sri Ramakrishna and is run by the
-                    esteemed organization Ramakrishna Mission, Belur Math, which
-                    was founded by Swami Vivekananda himself with the objective
-                    - "one’s own salvation and for the welfare of the world".
-                    Vivekananda’s concept of ‘Man making and character building
-                    education’ is our guiding light. In Tripura our Vidyalaya
-                    has been carrying a uniform track record of quality
-                    education with high moral values for twenty five years.
+                  <div className="position-absolute bottom-0 color-white bold bg-linear-black font-size-smd text-center bold name-anchor width-100">
+                    Ramakrishna Mission Vidyalaya
                   </div>
                 </div>
               </div>
@@ -202,17 +208,8 @@ class PortfolioComponent extends Component {
                   className="education-image-div bg-nita cursor-pointer"
                   onClick={() => this.openNita()}
                 >
-                  <div className="position-absolute bottom-0 color-white bold bg-linear-black font-size-md">
-                    <span className="name-anchor bold">
-                      National Institute of Technology Agartala (NIT Agartala or
-                      NITA)
-                    </span>{" "}
-                    is a technology-oriented institute of higher education
-                    established by India's Ministry of Human Resource
-                    Development Government of India in Agartala, India. It was
-                    founded as Tripura Engineering College in 1965 and declared
-                    a National Institute of Technology (NIT) in 2006, thus being
-                    recognized as an Institute of National Importance.
+                  <div className="position-absolute bottom-0 color-white bold bg-linear-black font-size-smd text-center bold name-anchor width-100">
+                    National Institute of Technology Agartala (NITA)
                   </div>
                 </div>
               </div>
@@ -226,55 +223,115 @@ class PortfolioComponent extends Component {
   sectionExperience() {
     return (
       <div className="experience">
-        <div className="work-experience-text">
-          {/* EXPERIENCE */}I am proud to be associated with these amazing
-          companies
+        <div className="work-experience-text" data-aos="zoom-in">
+          I am proud to be associated with these amazing companies
         </div>
-        <Container className="p-t-50">
+        <div className="p-t-50">
           <Row>
-            <Col md={3}></Col>
-            <Col sm={12} md={6}>
+            <Col sm={12} md={{ span: 8, offset: 2 }}>
               <div
                 className="main-education-card m-b-20 cursor-pointer"
                 data-aos="zoom-in"
                 onClick={() => this.openTravelopia()}
               >
                 <div className="education-card travelopia-card">
-                  <div className="width-80 m-auto pt-2 text-align-center">
-                    <Image src={travelopia} className="width-50"></Image>
+                  <div className="width-100 m-auto pt-2 text-align-center">
+                    <Image src={travelopia} className="width-30"></Image>
                   </div>
-                  <div className="gray-color text-center p-1">
+                  <div className="gray-color font-size-smd text-center p-1 bold">
                     Product Engineer
                   </div>
-                </div>
-                <div className="p-20 text-align-center bold uppercase mb-text">
-                  October 2023 - Present
+                  <div>
+                    <div className="pl-3 pt-2 bold uppercase travelopia-text">
+                      October 2023 - Present
+                    </div>
+                    <ul style={{ paddingLeft: "30px" }}>
+                      {this.state.travelopiaEx.map((el, index) => (
+                        <li className="exp-items" key={index}>
+                          {el}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <hr></hr>
+                  <div
+                    className="p-2 bold uppercase travelopia-text text-center"
+                    style={{
+                      fontSize: "12px",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                    }}
+                  >
+                    Languages and Skills :
+                    Tailwind,Bootstrap,NextJs,Node.js,Express.js,ReactJs,JavaScript,
+                    TypeScript, React Query, React Hook Form, Zod, TRPC, Chakra
+                    UI, Libraries and Tools : Jenkins, GIT Actions, Docker,
+                    StoryBook, Jest, React Testing Library, Husky, Lint-Stage,
+                    AWS, Redis, Clevertap, Sentry, DataDog, Newrelic
+                  </div>
                 </div>
               </div>
             </Col>
-            <Col md={3}></Col>
-          </Row>
-          <Row>
-            <Col sm={12} md={6}>
+            <Col sm={12} md={{ span: 8, offset: 2 }}>
               <div
                 className="main-education-card m-b-20 cursor-pointer"
                 data-aos="zoom-in"
                 onClick={() => this.openMedibuddy()}
               >
                 <div className="education-card medibuddy-card">
-                  <div className="width-100 p-15 text-align-center">
-                    <Image src={mblogo} className="width-50"></Image>
+                  <div className="width-100 m-auto p-15 text-align-center">
+                    <Image src={mblogo} className="width-30"></Image>
                   </div>
-                  <div className="gray-color text-center p-1">
+                  <div className="gray-color font-size-smd text-center p-1 bold">
                     Software Development Engineer - II
                   </div>
-                </div>
-                <div className="p-20 text-align-center bold uppercase mb-text">
-                  July 2020 - October 2023
+                  <div>
+                    <div className="pl-3 pt-2 bold uppercase mb-text">
+                      January 2022 - October 2023
+                    </div>
+                    <ul style={{ paddingLeft: "30px" }}>
+                      {this.state.mbEx2.map((el, index) => (
+                        <li className="exp-items" key={index}>
+                          {el}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <hr></hr>
+                  <div className="gray-color font-size-smd text-center p-1 bold">
+                    Software Development Engineer - I
+                  </div>
+                  <div>
+                    <div className="pl-3 pt-2 bold uppercase mb-text">
+                      July 2020 - January 2022
+                    </div>
+                    <ul style={{ paddingLeft: "30px" }}>
+                      {this.state.mbEx1.map((el, index) => (
+                        <li className="exp-items" key={index}>
+                          {el}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <hr></hr>
+                  <div
+                    className="p-2 bold uppercase mb-text text-center"
+                    style={{
+                      fontSize: "12px",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                    }}
+                  >
+                    Worked On : React.js, Next.js, Node.js, Angular, TypeScript,
+                    JavaScript, PostGres, Redis, MySQL, AWS SQS, Cloudwatch, S3,
+                    Cloudfront, Docker, Jenkins. <br />
+                    Analytics: Google Analytics, Branch, Clevertap, New-Relic,
+                    Re-tool
+                  </div>
                 </div>
               </div>
             </Col>
-            <Col sm={12} md={6}>
+            <Col sm={12} md={{ span: 8, offset: 2 }}>
               <div
                 className="main-education-card m-b-20"
                 data-aos="zoom-in"
@@ -282,110 +339,60 @@ class PortfolioComponent extends Component {
               >
                 <div className="education-card buildsupply-card p-0">
                   <div className="width-100 p-15 text-align-center">
-                    <Image src={bslogo} className="width-50"></Image>
+                    <Image src={bslogo} className="width-30"></Image>
                   </div>
                   <div>
-                    <div className="gray-color text-center p-1">
+                    <div className="gray-color text-center p-1 bold">
                       Analyst - Software Engineer
+                    </div>
+                    <div>
+                      <div className="pl-3 pt-2 bold uppercase  bs-text">
+                        June 2019 - June 2020
+                      </div>
+                      <ul style={{ paddingLeft: "30px" }}>
+                        {this.state.bsEx.map((el, index) => (
+                          <li className="exp-items" key={index}>
+                            {el}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <div className="p-20 text-align-center bold uppercase bs-text">
-                  June 2019 - June 2020
+              </div>
+            </Col>
+            <Col sm={12} md={{ span: 8, offset: 2 }}>
+              <div
+                className="main-education-card m-b-20"
+                data-aos="zoom-in"
+                onClick={() => this.openIIT()}
+              >
+                <div className="education-card iit-card p-0">
+                  <div className="width-100 p-15 text-align-center">
+                    <Image src={iitkgp} className="width-10"></Image>
+                  </div>
+                  <div>
+                    <div className="gray-color text-center p-1 bold">
+                      Indian Institute of Technology, Kharagpur
+                    </div>
+                    <div>
+                      <div className="pl-3 pt-2 bold uppercase  iit-text">
+                        May 2018 - June 2018 ( Summer Intern )
+                      </div>
+                      <ul style={{ paddingLeft: "30px", paddingTop: "5px" }}>
+                        {this.state.iitEx.map((el, index) => (
+                          <li className="exp-items" key={index}>
+                            {el}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Col>
           </Row>
-        </Container>
-      </div>
-    );
-  }
-
-  sectionSkills() {
-    return (
-      <div className="skills">
-        <div className="skills-text">I've expertised in...</div>
-        <Container className="p-t-30">
-          <div className="display-flex justify-content-space-around flex-wrap width-100">
-            <div className="skills-card">
-              <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={react} className="width-100"></Image>
-              </div>
-              <div className="bold text-align-center">REACT</div>
-            </div>
-            <div className="skills-card">
-              <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={nextjs} className="width-80"></Image>
-              </div>
-              <div className="bold text-align-center">Next Js</div>
-            </div>
-            <div className="skills-card">
-              <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={angular} className="width-100"></Image>
-              </div>
-              <div className="bold text-align-center">Angular</div>
-            </div>
-            <div className="skills-card">
-              <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={js} className="width-69"></Image>
-              </div>
-              <div className="bold text-align-center">JavaScript</div>
-            </div>
-            <div className="skills-card">
-              <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={nodejs} className="width-69 m-t-25"></Image>
-              </div>
-              <div className="bold text-align-center">Node JS</div>
-            </div>
-
-            <div className="skills-card">
-              <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={ts} className="width-69"></Image>
-              </div>
-              <div className="bold text-align-center">TypeScript</div>
-            </div>
-
-            <div className="skills-card">
-              <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={tailwind} className="width-80"></Image>
-              </div>
-              <div className="bold text-align-center">Tailwind CSS</div>
-            </div>
-
-            <div className="skills-card">
-              <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={css} className="width-69"></Image>
-              </div>
-              <div className="bold text-align-center">CSS</div>
-            </div>
-            <div className="skills-card">
-              <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={scss} className="width-69"></Image>
-              </div>
-              <div className="bold text-align-center">SCSS</div>
-            </div>
-            <div className="skills-card">
-              <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={bootstrap} className="width-69"></Image>
-              </div>
-              <div className="bold text-align-center">Bootstrap</div>
-            </div>
-
-            <div className="skills-card">
-              <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={java} className="width-80"></Image>
-              </div>
-              <div className="bold text-align-center">Java</div>
-            </div>
-
-            <div className="skills-card">
-              <div className="width-100 p-15 text-align-center height-adjust-skill-card">
-                <Image src={html} className="width-69"></Image>
-              </div>
-              <div className="bold text-align-center">HTML</div>
-            </div>
-          </div>
-        </Container>
+        </div>
       </div>
     );
   }
@@ -397,7 +404,7 @@ class PortfolioComponent extends Component {
           Publications
           <div className="width-50 border-bottom-red p-b-3"></div>
         </div>
-        <div className="p-t-25">
+        <div className="p-t-25" data-aos="fade">
           <Accordion>
             <Card>
               <Accordion.Toggle
@@ -705,9 +712,8 @@ class PortfolioComponent extends Component {
         {this.sectionAboutMe()}
         {this.sectionEducation()}
         {this.sectionExperience()}
-        {this.sectionSkills()}
         {this.sectionPublications()}
-        {this.sectionCertifications()}
+        {/* {this.sectionCertifications()} */}
         {this.sectionFooter()}
       </>
     );
